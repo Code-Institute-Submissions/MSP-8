@@ -380,7 +380,7 @@ def dragon():
     # User input to transition to the next stage
 
         answer = input('What be thy question\n')
-        print 'Thinking...'
+        print 'Thinking...\n'
         time.sleep(random.randrange(0, 3))
         print random.choice(eight_ball)
         print '\nDo you have another question for the Dragon?'
@@ -399,23 +399,23 @@ def dragon():
 
 eight_ball = [
     'If you Believe it will happen',
-    'Without a doubt',
-    'Yes, definitely',
-    'You may rely on it',
-    'As I see it, yes',
+    'Live and let live',
+    '42',
+    'Is that really the question you wanted to ask',
+    'Maybe if you win the lottery',
     'Most Likely',
-    'Outlook Good',
+    'It is a possibility',
     'Yes',
-    'Signs point to yes',
-    'Reply hazy, try again',
-    'Ask again later',
-    'Better not tell you now',
-    'Cannot predict now',
-    'Concentrate and ask again',
+    'The stars are aligned',
+    'Life is short, go for it',
+    'Hard No!',
+    'You really need to chill out',
+    'Too simple to answer',
+    'Maybe you should talk to someone else',
     "Don't count on it",
-    'My reply is no',
-    'My sources say no',
-    'Outlook not so good',
+    'Unlikely at this time',
+    'My sources say do not even try it',
+    'Go hug your teddy bear',
     'Very Doubtful',
     ]
 
