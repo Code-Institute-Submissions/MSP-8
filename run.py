@@ -242,3 +242,21 @@ def ocean():
         # This will end the game and ask the User if they wish to start again
         game_over("Leaving so soon.......... Fine chicken out why don't you...")
 
+# game_over function that prints the reason from the initiating step
+def game_over(reason):
+    print("\n" + reason)
+    print("Game Over!")
+  # asks the User if they wish to begin the game again
+    play_again()
+
+# Function which enables the user to restart the game
+def play_again():
+    print("\nDo you want to play again? (y or n)")
+    answer = input(">").lower()
+    if "y" in answer:
+        start()
+    else:
+        exit()
+
+# start the game
+start()
