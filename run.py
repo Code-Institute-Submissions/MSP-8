@@ -57,3 +57,29 @@ def desert():
         answer == "0"
         # This will end the game and ask the User if they wish to start again
         game_over("Leaving so soon.......... Fine chicken out why don't you...")
+
+###############################################################################################
+# SECOND step (deeper into the desert journey) in the yellow door/desert pathway
+def deeper_desert():
+    print("\nAfter stumbling forward for miles in hot sand,")
+    print("\nyou think you see an oasis off in the distance")
+    print("Do you: (1, 2 or 0)")
+    print("1). Turn towards the oasis and hope that it is real")
+    print("2). Convince yourself that you are hallucinating and keep going")
+    print("0). Run away")
+
+    # Accept user input, allowing choices, option to quit and invalid function
+    answer = input(">")
+    while answer not in ["1", "2", "0"]:
+        print("I know you are hot and sweaty, but moving forward if the only way to go")
+        answer = input (">")
+    if answer == "1":
+        # Turn towards the oasis and hope that it is real result =  move forward
+        oasis()
+    elif answer == "2":
+        # Convince yourself that you are hallucinating and keep going result = Game Over
+        game_over("What are you, Crazy? Like for real, who would chose the desrt over an oasis!")
+    else:
+        answer == "0":
+        # Initiates the quit/end game option as asks if the user wants to play again
+        game_over("Oooooo, Look who can't take the heat......")
