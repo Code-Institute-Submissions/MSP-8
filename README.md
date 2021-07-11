@@ -1,45 +1,142 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Choose your own adventure 
 
-Welcome USER_NAME,
+The purpose of Milestone Project 3 is to create a a text based choose your own adventure game, using python
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+# Project Summary
 
-## Gitpod Reminders
+The Project will enable a user to:
+- Partake in a mini adventure game
+- Manipulate the story line via manual input
+- 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Benefits and Rational
 
-`python3 -m http.server`
+Such an application will:
+- 
 
-A blue button should appear to click: *Make Public*,
+## User Stories
 
-Another blue button should appear to click: *Open Browser*.
+Below is a high-level list of User Stories for the purposes of development, testing and delivery.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Business Case User stories:
 
-A blue button should appear to click: *Make Public*,
+- As a User I want to be able to deploy and play the command-line application easily.
+- As a User I want to be able to navigate throughout the story with easy
+- As a User I want all errors clearly explained and corrective actions available
+- As a User I want the adventure to have a clear begining, middle, and ending
 
-Another blue button should appear to click: *Open Browser*.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Functional Developer stories:
+-	As a Developer I want to ensure the command-line application python code passes through the official validator without faults/errors/warnings
+-	As a Developer I want to ensure all intended functionality works as per critial project objectives.
+-	As a Developer I want to ensure that all code means the minimum standards for readability as per PEP8
+-	As a Developer I want to ensure the command-line application is responsive to User interaction
+-   As a Developer I want to ensure the command-line application handles incorrect User Input
+-	As a Developer I want to ensure there are details (wireframes and final text sections) within the README document
+-	As a Developer I want to ensure the web application meets accessibility guidelines
+-	As a Developer I want to be able to easily deploy this command-line application to the cloud as per the Code Institutes requirements
+- 	As a Developer I want to ensure Github is used for version control of the developing code
+*Interpreted from the Assignment document*
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+# Functional Requirements Scope
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Design Consistancies
+The following is a list of design aspects that must be maintained throughout the command-line application. 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+The command-line application must be clear and concise. It should display, at a minimun:
+- Display a message for each page
+- Change the next step of the story based on User input
+- Show a message if incorrect input have been entered
+- Lead the user throw a maze of steps to "meet the Dragon"
+- Once at "the Dragon", allow the user to ask Three questions
+- Generate a random response to each question asked of the dragon
+- If the User attempts to ask more then three questions, "the Dragon" will get angry and return the user to the start of the game
+- the ability to quit the game at any stage by pressing 'q'
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![initial logic concept]()
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+# Final/Existing Feature Outcomes
+The final command-line application logic will be as follows:
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
---------
 
-Happy coding!
+
+# Future Features to be Implemented
+
+
+
+# Testing 
+
+Full details and evidence of testing conducted throughout the software development life cycle of this project will be maintained in a seperate document called testing.md
+
+## Production Shakedown Pre Submission
+
+Once the command-line application had been deployed the Python code was passed through the official PEP8 code validator
+
+![pythonvalidator]()
+
+All functions have been manually selected to ensure all information has been correctly populated and displayed
+
+
+### Unfixed bugs
+
+-
+
+# Deployment Process
+
+## Direct Deployment
+The site was deployed to GitHub pages. 
+
+The steps to deploy are as follows: 
+  - 
+
+
+
+The deployment link for this web apllication is 
+
+## Copying the Repository
+
+To obtain a copy of the code for this project, complete the following steps:
+
+- Go to the code page of the project
+  ![copy1]
+
+- Select the "code" buttom in the top right hand corner
+  ![copy2]
+
+- From here the project code can either be
+       Downloaded as a ZIP file
+       Open with GitHub Desktop (if you have downloaded the app)
+       Open with Visual Studio (if you have a copy of the program)
+
+# Credits 
+This project could not have been created without the following:
+
+## Code Guidance
+
+
+## API
+
+
+## Media
+
+
+
+## Development/Testing Validators
+GitPod IDE
+- https://gitpod.io
+
+Python checker.
+- https://jshint.com/
+
+Python formatter
+- https://codebeautify.org/
+
+## Additional Thanks
+
+Independant Reviewers: Tom Walsh, Daragh Curtis, 
+
+Mentor: Felipe Souza Alarco
