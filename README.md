@@ -6,7 +6,7 @@ The purpose of Milestone Project 3 is to create a a text based choose your own a
 
 The Project will enable a user to:
 - Partake in a mini adventure game
-- Manipulate the story line via manual input
+- Manipulate the direction of the story line via manual input
 - 
 
 ## Benefits and Rational
