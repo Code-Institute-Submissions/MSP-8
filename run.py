@@ -1,3 +1,6 @@
+import random
+import time
+
 #The following function is the initial step of the journey
 def start():
     print("\nSo, you seek the wisdom of the Dragon to answer your questions?")
@@ -264,6 +267,35 @@ def play_again():
         start()
     else:
         exit()
+
+#The following function is the initial step of the journey
+def dragon():
+    print("\nAmazing, you actually made it.")
+    print("\nYou now stand before the Dragon")
+    print("\nAsk you question and receive infinate wisdom:")
+    i = 1
+    while(i < 4):
+    #User input to transition to the next stage
+        answer = input("What be thy question\n")
+        print("Thinking...")
+        time.sleep(random.randrange(0,3))
+        print(random.choice(eight_ball))
+        print("\nDo you have another question for the Dragon?")
+        answer = input(">").lower()
+        if "y" in answer:
+            i += 1
+            continue
+        else:
+            game_over("Fair well mighty warrior!")
+    else:
+        #This will end the game & ask the User if they wish to start again
+        game_over("Don't be so greedy. Begone with you!!!")
+
+eight_ball = [ "If you Believe it will happen", "Without a doubt", "Yes, definitely",
+    "You may rely on it", "As I see it, yes", "Most Likely", "Outlook Good",
+    "Yes", "Signs point to yes", "Reply hazy, try again", "Ask again later",
+    "Better not tell you now", "Cannot predict now", "Concentrate and ask again",
+    "Don't count on it", "My reply is no", "My sources say no", "Outlook not so good", "Very Doubtful"]
 
 #start the game
 start()
