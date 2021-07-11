@@ -116,7 +116,8 @@ To obtain a copy of the code for this project, complete the following steps:
 This project could not have been created without the following:
 
 ## Code Guidance
-
+- Dragon responses loosely based on the magic 8-ball code located here
+        https://www.w3resource.com/projects/python/python-projects-5.php
 
 ## API
 
