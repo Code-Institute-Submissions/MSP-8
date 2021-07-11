@@ -215,3 +215,30 @@ def gorge():
         # This will end the game and ask the User if they wish to start again
         game_over("Some people just can't take the pressure...")
 
+#######################################
+# FIRST (and only) step (ocean journey) in the blue door/ocean pathway
+def ocean():
+    print("\nYou have chosen the blue door")
+    print("\nAll other doors disappear as you reach out for the door handle")
+    print("After opening the door you find yourself plunged into the deep, dark ocean")
+    print("Which do you choose? (1, 2 or 0)")
+    print("1). Swim for it and hope for the best")
+    print("2). Dive down and see what is below")
+    print("0). I can't swim")
+
+    # User input to transition to the next stage
+    answer = input(">")
+    while answer not in ["1", "2", "0"]:
+        print("invalid key message")
+        answer = input(">")
+    if answer == "1":
+        # Swim for it and hope for the best result = Game Over
+        game_over("seriously, ocean in all directions and you give up and float")
+    elif answer == "2":
+        # Dive down to the depths below = Move forward onto the desert step four
+        pond()
+    else:
+        answer == "0"
+        # This will end the game and ask the User if they wish to start again
+        game_over("Leaving so soon.......... Fine chicken out why don't you...")
+
