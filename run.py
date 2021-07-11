@@ -134,3 +134,30 @@ def pond():
         answer == "0"
         # This will end the game and ask the User if they wish to start again
         game_over("So close and yet so far......")
+
+########################################################################################################
+# FIRST step (forest journey) in the green door/forest pathway
+def forest():
+    print("\nYou have chosen the green door")
+    print("\nAll other doors disappear as you reach out for the door handle")
+    print("After opening the door you find yourself in the middle of a Tropical forest")
+    print("Which do you choose? (1, 2 or 0)")
+    print("1). Try to forge a path forward deeper into the undergrowth")
+    print("2). Climb the biggest tree you can find, for a better view")
+    print("0). Ew, mosquitoes")
+
+# Accept user input, allowing choices, option to quit and invalid function
+    answer = input(">")
+    while answer not in ["1", "2", "0"]:
+        print("There is no going back now, make a choice, forward or up.")
+        answer = input(">")
+    if answer == "1":
+        # Try to forge a path forward deeper into the undergrowth results = move forward
+        deeper_forest()
+    elif answer == "2":
+        # Climb the biggest tree you can find, for a better view results = Game Over
+        game_over("The view from the top of the tree is amazing. Forest as far as the eye can see. Too bad the branch broke and you fell to the ground")
+    else:
+        answer == "0"
+        # This will end the game and ask the User if they wish to start again
+        game_over("Leaving so soon.......... Fine chicken out why don't you...")
