@@ -1,4 +1,4 @@
-# The following function is the initial step of the journey, the kick off screen
+# The following function is the initial step of the journey
 def start():
     print("\nSo, you seek the wisdom of the Dragon to answer your questions?")
     print("\nThe journey is long and arguous, but rewarding!")
@@ -14,7 +14,8 @@ def start():
     answer = input(">")
     # Validation and display surrounding invlaid character
     while answer not in ["1", "2", "3", "0"]:
-        print("Ah here, You just run into a door, how about you try using a door...")
+        print("Ah here, You just run into a door,")
+        print("\nhow about you try using a door...")
         answer = input(">")
     if answer == "1":
         # lead the User into the desert adventure pathway
@@ -30,7 +31,6 @@ def start():
         # This will end the game and ask the User if they wish to start again
         game_over("Then what are you doing here... get lost already")
 
-###############################################################################################
 # FIRST step (desert journey) in the yellow door/desert pathway
 def desert():
     print("\nYou have chosen the yellow door")
@@ -52,13 +52,12 @@ def desert():
         deeper_desert()
     elif answer == "2":
         # Turn right and hope to find an end to this heat = result Game Over
-        game_over("There is no end to the Heat. You end up lost in the expanse of sand, looks like you won't be seeing the Dragon today.")
+        game_over("There is no end to the Heat. \nYou end up lost in the expanse of sand, \nlooks like you won't be seeing the Dragon today.")
     else:
         answer == "0"
         # This will end the game and ask the User if they wish to start again
         game_over("Leaving so soon.......... Fine chicken out why don't you...")
 
-###############################################################################################
 # SECOND step (deeper into the desert journey) in the yellow door/desert pathway
 def deeper_desert():
     print("\nAfter stumbling forward for miles in hot sand,")
@@ -80,11 +79,10 @@ def deeper_desert():
         # Convince yourself that you are hallucinating and keep going result = Game Over
         game_over("What are you, Crazy? Like for real, who would chose the desrt over an oasis!")
     else:
-        answer == "0":
+        answer == "0"
         # Initiates the quit/end game option as asks if the user wants to play again
         game_over("Oooooo, Look who can't take the heat......")
 
-###############################################################################################
 # THIRD step (oasis step the desert journey) in the yellow door/desert pathway
 def oasis():
     print("\nUpon Reaching the oasis you find relief in the shade of the tree branches")
@@ -98,8 +96,8 @@ def oasis():
     answer = input(">")
     while answer not in ["1", "2", "0"]:
         print("What? Did you fall asleep under a tree? Make a choice already")
-        answer = input(">") 
-    if answer == "1":
+        answer = input(">")
+        if answer == "1":
         # Have a drink before continuing into the desert result = Game Over
         game_over("What? Did you hit your head or something, why would you choose the desert over a swim")
     elif answer == "2":
@@ -110,7 +108,6 @@ def oasis():
         # This will end the game and ask the User if they wish to start again
         game_over("Ooooo, Look who can't take the heat.....")
 
-###############################################################################################
 # FOURTH step (deeper into the desert journey) in the yellow door/desert pathway
 def pond():
     print("\nWhile swimming you notice a small cave within the shallows")
@@ -135,7 +132,6 @@ def pond():
         # This will end the game and ask the User if they wish to start again
         game_over("So close and yet so far......")
 
-########################################################################################################
 # FIRST step (forest journey) in the green door/forest pathway
 def forest():
     print("\nYou have chosen the green door")
@@ -162,7 +158,6 @@ def forest():
         # This will end the game and ask the User if they wish to start again
         game_over("Leaving so soon.......... Fine chicken out why don't you...")
 
-########################################################################################################
 # SECOND step (finding the gorge) in the green door/forest pathway
 def deeper_forest():
     print("\nYou forge a path forward throw the thick undergrowth")
@@ -189,7 +184,6 @@ def deeper_forest():
         # This will end the game and ask the User if they wish to start again
         game_over("Leaving so soon.......... Fine chicken out why don't you...")
 
-########################################################################################################
 # THIRD step (crossing the gorge) in the green door/forest pathway
 def gorge():
     print("\nYou walk along the edge of the bend until the sun is low in the sky")
@@ -215,7 +209,6 @@ def gorge():
         # This will end the game and ask the User if they wish to start again
         game_over("Some people just can't take the pressure...")
 
-#######################################
 # FIRST (and only) step (ocean journey) in the blue door/ocean pathway
 def ocean():
     print("\nYou have chosen the blue door")
