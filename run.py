@@ -110,3 +110,27 @@ def oasis():
         # This will end the game and ask the User if they wish to start again
         game_over("Ooooo, Look who can't take the heat.....")
 
+###############################################################################################
+# FOURTH step (deeper into the desert journey) in the yellow door/desert pathway
+def pond():
+    print("\nWhile swimming you notice a small cave within the shallows")
+    print("Do you: (1, 2 or 0)")
+    print("1). Take a deep breath and dive into the unknown")
+    print("2). Keep swimming and forget about the cave")
+    print("0). Run away")
+
+# Accept user input, allowing choices, option to quit and invalid function
+    answer = input(">")
+    while answer not in ["1", "2", "0"]:
+        print("This isn't like the beer advert, there is no wildcard 'Option C'")
+        answer = input(">")
+    if answer == "1":
+        # Take a deep breath and dive into the unknown result = move forward
+        dragon()
+    elif answer == "2":
+        # Keep swimming and forget about the cave result = Game Over
+        game_over("The Cave is just way too much adventure for you, Instead you abandon your quest and live out your days in the oasis")
+    else:
+        answer == "0"
+        # This will end the game and ask the User if they wish to start again
+        game_over("So close and yet so far......")
