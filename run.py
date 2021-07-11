@@ -83,3 +83,30 @@ def deeper_desert():
         answer == "0":
         # Initiates the quit/end game option as asks if the user wants to play again
         game_over("Oooooo, Look who can't take the heat......")
+
+###############################################################################################
+# THIRD step (oasis step the desert journey) in the yellow door/desert pathway
+def oasis():
+    print("\nUpon Reaching the oasis you find relief in the shade of the tree branches")
+    print("\nA short way into the oasis you see a small pond")
+    print("Do you: (1, 2 or 0)")
+    print("1). Have a drink before continuing into the desert")
+    print("2). Dive in and enjoy a swim in the cool water")
+    print("0). Run away")
+
+    # Accept user input, allowing choices, option to quit and invalid function
+    answer = input(">")
+    while answer not in ["1", "2", "0"]:
+        print("What? Did you fall asleep under a tree? Make a choice already")
+        answer = input(">") 
+    if answer == "1":
+        # Have a drink before continuing into the desert result = Game Over
+        game_over("What? Did you hit your head or something, why would you choose the desert over a swim")
+    elif answer == "2":
+        # Dive in and enjoy a swim in the cool water result = move forward
+        pond()
+    else:
+        answer == "0"
+        # This will end the game and ask the User if they wish to start again
+        game_over("Ooooo, Look who can't take the heat.....")
+
