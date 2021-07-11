@@ -161,3 +161,30 @@ def forest():
         answer == "0"
         # This will end the game and ask the User if they wish to start again
         game_over("Leaving so soon.......... Fine chicken out why don't you...")
+
+########################################################################################################
+# SECOND step (finding the gorge) in the green door/forest pathway
+def deeper_forest():
+    print("\nYou forge a path forward throw the thick undergrowth")
+    print("\nEventually you reach a large gorge")
+    print("You notice some vines that hang across the gap")
+    print("Do you? (1, 2 or 0)")
+    print("1). Swing across like Tarzan")
+    print("2). Walk along the edge to find a safer way across")
+    print("0). Nope, Heights are just way to much")
+
+    # Accept user input, allowing choices, option to quit and invalid function
+    answer = input(">")
+    while answer not in ["1", "2", "0"]:
+        print("Seriously dude, make a choice")
+        answer = input(">")
+    if answer == "1":
+        # Swing across like Tarzan result = Game Over
+        game_over("What the frell. This is not a movie. How could you possibly think you could swing on a vine")
+    elif answer == "2":
+        # Walk along the edge to find a safer way across = Move Forward
+        gorge()
+    else:
+        answer == "0"
+        # This will end the game and ask the User if they wish to start again
+        game_over("Leaving so soon.......... Fine chicken out why don't you...")
