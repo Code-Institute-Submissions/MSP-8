@@ -188,3 +188,30 @@ def deeper_forest():
         answer == "0"
         # This will end the game and ask the User if they wish to start again
         game_over("Leaving so soon.......... Fine chicken out why don't you...")
+
+########################################################################################################
+# THIRD step (crossing the gorge) in the green door/forest pathway
+def gorge():
+    print("\nYou walk along the edge of the bend until the sun is low in the sky")
+    print("\nJust as you are about to give up you see a rope bridge ahead")
+    print("Do you? (1, 2 or 0)")
+    print("1). Carefully, but quickly, cross the rope bridge")
+    print("2). The rope bridge looks flimsy, cotinue along the edge of the gorge")
+    print("0). Got a problem with heights do ya princess?")
+
+    # Accept user input, allowing choices, option to quit and invalid function
+    answer = input(">")
+    while answer not in ["1", "2", "0"]:
+        print("invalid entry needed")
+        answer = input(">")
+    if answer == "1":
+        # Carefully, but quickly, cross the rope bridge result = Game Over
+        game_over("You seriously thought this old thing was going to hold you. You have got to be kidding")
+    elif answer == "2":
+        # The rope bridge looks flimsy, cotinue along the edge of the gorge results = move forward
+        desert()
+    else:
+        answer == "0"
+        # This will end the game and ask the User if they wish to start again
+        game_over("Some people just can't take the pressure...")
+
