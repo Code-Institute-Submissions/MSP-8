@@ -29,3 +29,31 @@ def start():
         answer == "0"
         # This will end the game and ask the User if they wish to start again
         game_over("Then what are you doing here... get lost already")
+
+###############################################################################################
+# FIRST step (desert journey) in the yellow door/desert pathway
+def desert():
+    print("\nYou have chosen the yellow door")
+    print("\nAll other doors disappear as you reach out for the door handle")
+    print("As soon as the door opens, you are hit by a blast of heat.")
+    print("You are in the middle of the desert.")
+    print("Which do you choose? (1, 2 or 0)")
+    print("1). Head straight into the dunes")
+    print("2). Turn right and hope to find an end to this heat")
+    print("0). Nah, I'm out, I need Air conditioning")
+
+    # Accept user input, allowing choices, option to quit and invalid function
+    answer = input(">")
+    while answer not in ["1", "2", "0"]:
+        print("I know you are hot and tired, but you need to make a choice")
+        answer = input(">")
+    if answer == "1":
+        # Head straight into the dunes result = head further
+        deeper_desert()
+    elif answer == "2":
+        # Turn right and hope to find an end to this heat = result Game Over
+        game_over("There is no end to the Heat. You end up lost in the expanse of sand, looks like you won't be seeing the Dragon today.")
+    else:
+        answer == "0"
+        # This will end the game and ask the User if they wish to start again
+        game_over("Leaving so soon.......... Fine chicken out why don't you...")
