@@ -75,7 +75,7 @@ def desert():
 
         # Turn right and hope to find an end to this heat
 
-        game_over('''There is no end to this heat. 
+        game_over('''There is no end to this heat.
         You end up lost in the expanse of sand,
         looks like you won't be seeing the Dragon today.''')
     else:
@@ -101,7 +101,7 @@ def deeper_desert():
 
     answer = input('>')
     while answer not in ['1', '2', '0']:
-        print '''I know you are hot and sweaty, 
+        print '''I know you are hot and sweaty,
         but moving forward if the only way to go'''
         answer = input('>')
     if answer == '1':
@@ -113,7 +113,7 @@ def deeper_desert():
 
         # Convince yourself... = Game Over
 
-        game_over('''What are you, Crazy? 
+        game_over('''What are you, Crazy?
         Like for real, who would choose the desert over an oasis!'''
                   )
     else:
@@ -145,7 +145,7 @@ def oasis():
 
         # Have a drink before continuing into the desert result = Game Over
 
-        game_over('''What? Did you hit your head or something, 
+        game_over('''What? Did you hit your head or something,
         why would you choose the desert over a swim'''
                   )
     elif answer == '2':
@@ -186,7 +186,7 @@ def pond():
 
         # Keep swimming and forget about the cave result = Game Over
 
-        game_over('''The Cave is just way too much adventure for you, 
+        game_over('''The Cave is just way too much adventure for you,
         Instead you abandon your quest and live out your days in the oasis'''
                   )
     else:
@@ -224,8 +224,8 @@ def forest():
 
         # Climb the biggest tree you can find... = Game Over
 
-        game_over('''The view from the top of the tree is amazing. 
-        Forest as far as the eye can see. 
+        game_over('''The view from the top of the tree is amazing.
+        Forest as far as the eye can see.
         Too bad the branch broke and you fell to the ground''')
     else:
         answer == '0'
@@ -257,7 +257,7 @@ def deeper_forest():
 
         # Swing across like Tarzan result = Game Over
 
-        game_over('''What the frell. This is not a movie. 
+        game_over('''What the frell. This is not a movie.
         How could you possibly think you could swing on a vine'''
                   )
     elif answer == '2':
@@ -294,7 +294,7 @@ def gorge():
 
         # Carefully, but quickly, cross the rope bridge result = Game Over
 
-        game_over('''You seriously thought this old thing was going to hold you. 
+        game_over('''You seriously thought this old thing was going to hold you.
         You have got to be kidding'''
                   )
     elif answer == '2':
