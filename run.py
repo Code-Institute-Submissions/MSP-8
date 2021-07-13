@@ -9,8 +9,8 @@ def start():
     print('\nThe journey is long and arguous, but rewarding!')
     print('To begin, you walk down a long, dark corridor')
     print('At the end you are faced with three doors')
-    print('Which do you choose? (1, 2 or 3)')
-    print('\n 1). Bright Yellow door to the left')
+    print('\nWhich do you choose? (1, 2 or 3)')
+    print('\n1). Bright Yellow door to the left')
     print('2). Deep Green door directly ahead')
     print('3). Brilliant Blue door to the right')
     print('0). Runaway while you can coward......')
@@ -52,10 +52,10 @@ def start():
 
 def desert():
     print('\nYou have chosen the yellow door')
-    print('\nAll other doors disappear as you reach out for the door handle')
+    print('All other doors disappear as you reach out for the door handle')
     print('As soon as the door opens, you are hit by a blast of heat.')
     print('You are in the middle of the desert.')
-    print('Which do you choose? (1, 2 or 0)')
+    print('\nWhich do you choose? (1, 2 or 0)')
     print('1). Head straight into the dunes')
     print('2). Turn right and hope to find an end to this heat')
     print("0). Nah, I'm out, I need Air conditioning")
@@ -90,9 +90,9 @@ def desert():
 
 def deeper_desert():
     print('\nAfter stumbling forward for miles in hot sand,')
-    print('\nyou think you see an oasis off in the distance')
-    print('Do you: (1, 2 or 0)')
-    print('1). Turn towards the oasis and hope that it is real')
+    print('you think you see an oasis off in the distance')
+    print('\nDo you: (1, 2 or 0)')
+    print('1). Run towards the oasis and hope that it is real')
     print('2). Convince yourself that you are hallucinating and keep going')
     print('0). Run away')
 
@@ -126,9 +126,9 @@ def deeper_desert():
 
 def oasis():
     print('\nUpon Reaching the oasis you find relief')
-    print('      in the shade of the tree branches')
+    print('in the shade of the tree branches')
     print('A short way into the oasis you see a small pond')
-    print('Do you: (1, 2 or 0)')
+    print('\nDo you: (1, 2 or 0)')
     print('1). Have a drink before continuing into the desert')
     print('2). Dive in and enjoy a swim in the cool water')
     print('0). Run away')
@@ -162,7 +162,7 @@ def oasis():
 
 def pond():
     print('\nWhile swimming you notice a small cave within the shallows')
-    print('Do you: (1, 2 or 0)')
+    print('\nDo you: (1, 2 or 0)')
     print('1). Take a deep breath and dive into the unknown')
     print('2). Keep swimming and forget about the cave')
     print('0). Run away')
@@ -197,10 +197,10 @@ def pond():
 
 def forest():
     print('\nYou have chosen the green door')
-    print('\nAll other doors disappear as you reach out for the door handle')
+    print('All other doors disappear as you reach out for the door handle')
     print('After opening the door you find yourself...')
     print('in the middle of a tropical forest')
-    print('Which do you choose? (1, 2 or 0)')
+    print('\nWhich do you choose? (1, 2 or 0)')
     print('1). Try to forge a path forward deeper into the undergrowth')
     print('2). Climb the biggest tree you can find, for a better view')
     print('0). Ew, mosquitoes')
@@ -235,9 +235,9 @@ def forest():
 
 def deeper_forest():
     print('\nYou forge a path forward throw the thick undergrowth')
-    print('\nEventually you reach a large gorge')
+    print('Eventually you reach a large gorge')
     print('You notice some vines that hang across the gap')
-    print('Do you? (1, 2 or 0)')
+    print('\nDo you? (1, 2 or 0)')
     print('1). Swing across like Tarzan')
     print('2). Walk along the edge to find a safer way across')
     print('0). Nope, Heights are just way to much')
@@ -272,17 +272,17 @@ def deeper_forest():
 def gorge():
     print('\nYou walk along the edge until the sun is low in the sky')
     print('Just as you are about to give up you see a rope bridge ahead')
-    print('Do you? (1, 2 or 0)')
+    print('\nDo you? (1, 2 or 0)')
     print('1). Carefully, but quickly, cross the rope bridge')
     print('2). The rope bridge looks flimsy,')
     print('    cotinue along the edge of the gorge')
-    print('\n0). Got a problem with heights do ya princess?')
+    print('0). Got a problem with heights do ya princess?')
 
     # Accept user input, allowing choices, option to quit and invalid function
 
     answer = input('>')
     while answer not in ['1', '2', '0']:
-        print('invalid entry needed')
+        print('Are you trying to fall off the edge, pick a direction.')
         answer = input('>')
     if answer == '1':
 
@@ -308,9 +308,9 @@ def gorge():
 
 def ocean():
     print('\nYou have chosen the blue door')
-    print('\nAll other doors disappear as you reach out for the door handle')
+    print('All other doors disappear as you reach out for the door handle')
     print('After opening the door you are plunged into the deep, dark ocean')
-    print('Which do you choose? (1, 2 or 0)')
+    print('\nWhich do you choose? (1, 2 or 0)')
     print('1). Swim for it and hope for the best')
     print('2). Dive down and see what is below')
     print("0). I can't swim")
@@ -319,7 +319,7 @@ def ocean():
 
     answer = input('>')
     while answer not in ['1', '2', '0']:
-        print('invalid key message')
+        print('You will get tired if you stay where you are!')
         answer = input('>')
     if answer == '1':
 
@@ -353,7 +353,7 @@ def game_over(reason):
 # Function which enables the user to restart the game
 
 def play_again():
-    print('\nDo you want to play again? (y or n)')
+    print('\nDo you want to play again?')
     answer = input('>').lower()
     if 'y' in answer:
         start()
@@ -367,17 +367,17 @@ def dragon():
     print('\nAmazing, you actually made it.')
     print('\nYou now stand before the Dragon')
     print('\nAsk you question and receive infinate wisdom:')
-    print('\nBut beware, you only get three chances')
+    print('\nBut beware, you only get three chances\n')
     i = 1
     while i < 4:
 
         # User input to transition to the next stage
 
-        answer = input('What be thy question\n')
+        answer = input('What be thy question')
         print('Thinking...\n')
         time.sleep(random.randrange(0, 3))
         print(random.choice(dragon_talk))
-        print('\nDo you have another question for the Dragon?')
+        print('\nDo you have another question for the Dragon? (y or n)')
         answer = input('>').lower()
         if 'y' in answer:
             i += 1
