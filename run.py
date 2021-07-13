@@ -10,7 +10,7 @@ def start():
     print('To begin, you walk down a long, dark corridor')
     print('At the end you are faced with three doors')
     print('Which do you choose? (1, 2 or 3)')
-    print('1). Bright Yellow door to the left')
+    print('\n 1). Bright Yellow door to the left')
     print('2). Deep Green door directly ahead')
     print('3). Brilliant Blue door to the right')
     print('0). Runaway while you can coward......')
@@ -22,8 +22,8 @@ def start():
     # Validation and display surrounding invlaid character
 
     while answer not in ['1', '2', '3', '0']:
-        print('Ah here, You just run into a door,')
-        print('\nhow about you try using a door...')
+        print('Ah here, You just run into the wall,')
+        print('How about you try using a door...')
         answer = input('>')
     if answer == '1':
 
@@ -45,7 +45,7 @@ def start():
 
         # This will end the game & ask the User if they wish to start again
 
-        game_over('Then what are you doing here... get lost already')
+        game_over('Then what are you doing here... get lost!!!')
 
 
 # FIRST step (desert journey) in the yellow door/desert pathway
@@ -101,7 +101,7 @@ def deeper_desert():
     answer = input('>')
     while answer not in ['1', '2', '0']:
         print('''I know you are hot and sweaty,
-        but moving forward if the only way to go''')
+        but moving forward if the only way to go!''')
         answer = input('>')
     if answer == '1':
 
@@ -126,8 +126,8 @@ def deeper_desert():
 
 def oasis():
     print('\nUpon Reaching the oasis you find relief')
-    print('in the shade of the tree branches')
-    print('\nA short way into the oasis you see a small pond')
+    print('      in the shade of the tree branches')
+    print('A short way into the oasis you see a small pond')
     print('Do you: (1, 2 or 0)')
     print('1). Have a drink before continuing into the desert')
     print('2). Dive in and enjoy a swim in the cool water')
@@ -143,7 +143,7 @@ def oasis():
 
         # Have a drink before continuing into the desert result = Game Over
 
-        game_over('''What? Did you hit your head or something,
+        game_over('''Did you hit your head or something,
         why would you choose the desert over a swim''')
     elif answer == '2':
 
@@ -271,12 +271,12 @@ def deeper_forest():
 
 def gorge():
     print('\nYou walk along the edge until the sun is low in the sky')
-    print('\nJust as you are about to give up you see a rope bridge ahead')
+    print('Just as you are about to give up you see a rope bridge ahead')
     print('Do you? (1, 2 or 0)')
     print('1). Carefully, but quickly, cross the rope bridge')
     print('2). The rope bridge looks flimsy,')
-    print('cotinue along the edge of the gorge')
-    print('0). Got a problem with heights do ya princess?')
+    print('    cotinue along the edge of the gorge')
+    print('\n0). Got a problem with heights do ya princess?')
 
     # Accept user input, allowing choices, option to quit and invalid function
 
@@ -295,7 +295,7 @@ def gorge():
 
         # The rope bridge looks flimsy... results = move forward
 
-        desert()
+        deeper_desert()
     else:
         answer == '0'
 
@@ -325,7 +325,7 @@ def ocean():
 
         # Swim for it and hope for the best result = Game Over
 
-        game_over('seriously, ocean in all directions where are you going')
+        game_over('Seriously, ocean in all directions where are you going')
     elif answer == '2':
 
         # Dive down to the depths below = Move onto the desert step four
@@ -367,6 +367,7 @@ def dragon():
     print('\nAmazing, you actually made it.')
     print('\nYou now stand before the Dragon')
     print('\nAsk you question and receive infinate wisdom:')
+    print('\nBut beware, you only get three chances')
     i = 1
     while i < 4:
 
@@ -375,14 +376,14 @@ def dragon():
         answer = input('What be thy question\n')
         print('Thinking...\n')
         time.sleep(random.randrange(0, 3))
-        print(random.choice(eight_ball))
+        print(random.choice(dragon_talk))
         print('\nDo you have another question for the Dragon?')
         answer = input('>').lower()
         if 'y' in answer:
             i += 1
             continue
         else:
-            game_over('Fair thee well mighty warrior!')
+            game_over('Fair thee well, Oh mighty warrior!')
     else:
 
         # This will end the game & ask the User if they wish to start again
@@ -390,20 +391,20 @@ def dragon():
         game_over("Don't be so greedy. Begone with you!!!")
 
 
-eight_ball = [
-    'If you Believe it will happen',
+dragon_talk = [
+    'If you Believe, then it will happen',
     'Live and let live',
     '42',
     'Is that really the question you wanted to ask',
-    'Maybe if you win the lottery',
-    'Most Likely',
-    'It is a possibility',
-    'Yes',
-    'The stars are aligned',
+    'Maybe, if you win the lottery',
+    'Highly unikely',
+    'It is a possibility, in the distant future',
+    'If you are at one with the force',
+    'The stars are aligned, so it must be so',
     'Life is short, go for it',
     'Hard No!',
     'You really need to chill out',
-    'Too simple to answer',
+    'Are you speaking English? I thought not',
     'Maybe you should talk to someone else',
     "Don't count on it",
     'Unlikely at this time',
