@@ -89,7 +89,8 @@ def desert():
 # SECOND step (deeper into desert journey) in the yellow door/desert pathway
 
 def deeper_desert():
-    print('\nAfter stumbling forward for miles in hot sand,')
+    print('\In front of you stretches desert for miles and miles')
+    print('After stumbling forward for what feels like eternity,')
     print('you think you see an oasis off in the distance')
     print('\nDo you: (1, 2 or 0)')
     print('1). Run towards the oasis and hope that it is real')
