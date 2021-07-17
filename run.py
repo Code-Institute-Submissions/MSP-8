@@ -369,6 +369,20 @@ def deeper_forest():
 def gorge():
     print('\nYou walk along the edge until the sun is low in the sky')
     print('Just as you are about to give up you see a rope bridge ahead')
+    cprint('''                             ___....___
+                     __..-:'':__:..:__:'':-..__
+                 _.-:__:.-:'':  :  :  :'':-.:__:-._
+               .':.-:  :  :  :  :  :  :  :  :  :._:'.
+            _ :.':  :  :  :  :  :  :  :  :  :  :  :'.: _
+           [ ]:  :  :  :  :  :  :  :  :  :  :  :  :  :[ ]
+           [ ]:  :  :  :  :  :  :  :  :  :  :  :  :  :[ ]
+  :::::::::[ ]:__:__:__:__:__:__:__:__:__:__:__:__:__:[ ]:::::::::::
+  !!!!!!!!![ ]!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!![ ]!!!!!!!!!!!
+  ^^^^^^^^^[ ]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[ ]^^^^^^^^^^^
+           [ ]                                        [ ]
+           [ ]                                        [ ]
+     jgs   [ ]                                        [ ]
+   ~~^_~^~/   \~^-~^~ _~^-~_^~-^~_^~~-^~_~^~-~_~-^~_^/   \~^ ~~_ ^ ''', 'green')
     print('\nDo you? (1, 2 or 0)')
     print('1). Carefully, but quickly, cross the rope bridge')
     print('2). The rope bridge looks flimsy,')
