@@ -22,6 +22,7 @@ def start():
     # Validation and display surrounding invlaid character
 
     while answer not in ['1', '2', '3', '0']:
+        time.sleep(random.randrange(0, 2))
         print('Ah here, You just run into the wall,')
         print('How about you try using a door...')
         answer = input('>')
@@ -31,18 +32,18 @@ def start():
 
         desert()
     elif answer == '2':
-
+        time.sleep(random.randrange(0, 2))
         # lead the User into the forest adventure pathway
 
         forest()
     elif answer == '3':
-
+        time.sleep(random.randrange(0, 2))
         # lead the User into the ocean/water adventure pathway
 
         ocean()
     else:
         answer == '0'
-
+        time.sleep(random.randrange(0, 2))
         # This will end the game & ask the User if they wish to start again
 
         game_over('Then what are you doing here... get lost!!!')
@@ -64,15 +65,16 @@ def desert():
 
     answer = input('>')
     while answer not in ['1', '2', '0']:
+        time.sleep(random.randrange(0, 2))
         print('I know you are hot and tired, but you need to make a choice')
         answer = input('>')
     if answer == '1':
-
+        time.sleep(random.randrange(0, 2))
         # Head straight into the dunes result =head further
 
         deeper_desert()
     elif answer == '2':
-
+        time.sleep(random.randrange(0, 2))
         # Turn right and hope to find an end to this heat
 
         game_over('''There is no end to this heat.
@@ -80,7 +82,7 @@ def desert():
         looks like you won't be seeing the Dragon today.''')
     else:
         answer == '0'
-
+        time.sleep(random.randrange(0, 2))
         # This will end the game & ask the User if they wish to start again
 
         game_over("Leaving so soon... Fine chicken out why don't you...")
@@ -101,23 +103,24 @@ def deeper_desert():
 
     answer = input('>')
     while answer not in ['1', '2', '0']:
+        time.sleep(random.randrange(0, 2))
         print('''I know you are hot and sweaty,
         but moving forward if the only way to go!''')
         answer = input('>')
     if answer == '1':
-
+        time.sleep(random.randrange(0, 2))
         # Turn towards the oasis and hope that it is real result =move forward
 
         oasis()
     elif answer == '2':
-
+        time.sleep(random.randrange(0, 2))
         # Convince yourself... = Game Over
 
         game_over('''What are you, Crazy?
         Like for real, who would choose the desert over an oasis!''')
     else:
         answer == '0'
-
+        time.sleep(random.randrange(0, 2))
         # This will end the game & ask the User if they wish to start again
 
         game_over("Oooooo, Look who can't take the heat......")
@@ -138,22 +141,23 @@ def oasis():
 
     answer = input('>')
     while answer not in ['1', '2', '0']:
+        time.sleep(random.randrange(0, 2))
         print('What? Did you fall asleep under a tree? Make a choice already')
         answer = input('>')
     if answer == '1':
-
+        time.sleep(random.randrange(0, 2))
         # Have a drink before continuing into the desert result = Game Over
 
         game_over('''Did you hit your head or something,
         why would you choose the desert over a swim''')
     elif answer == '2':
-
+        time.sleep(random.randrange(0, 2))
         # Dive in and enjoy a swim in the cool water result = move forward
 
         pond()
     else:
         answer == '0'
-
+        time.sleep(random.randrange(0, 2))
         # This will end the game & ask the User if they wish to start again
 
         game_over("Ooooo, Look who can't take the heat.....")
@@ -172,23 +176,24 @@ def pond():
 
     answer = input('>')
     while answer not in ['1', '2', '0']:
+        time.sleep(random.randrange(0, 2))
         print("This isn't like the beer advert,")
         print("there is no wildcard 'Option C'")
         answer = input('>')
     if answer == '1':
-
+        time.sleep(random.randrange(0, 2))
         # Take a deep breath and dive into the unknown result = move forward
 
         dragon()
     elif answer == '2':
-
+        time.sleep(random.randrange(0, 2))
         # Keep swimming and forget about the cave result = Game Over
 
         game_over('''The Cave is just way too much adventure for you,
         Instead you abandon your quest and live out your days in the oasis''')
     else:
         answer == '0'
-
+        time.sleep(random.randrange(0, 2))
         # This will end the game & ask the User if they wish to start again
 
         game_over('So close and yet so far......')
@@ -210,15 +215,16 @@ def forest():
 
     answer = input('>')
     while answer not in ['1', '2', '0']:
+        time.sleep(random.randrange(0, 2))
         print('There is no going back now, make a choice, forward or up.')
         answer = input('>')
     if answer == '1':
-
+        time.sleep(random.randrange(0, 2))
         # Try to forge a path forward... = move forward
 
         deeper_forest()
     elif answer == '2':
-
+        time.sleep(random.randrange(0, 2))
         # Climb the biggest tree you can find... = Game Over
 
         game_over('''The view from the top of the tree is amazing.
@@ -226,7 +232,7 @@ def forest():
         Too bad the branch broke and you fell to the ground''')
     else:
         answer == '0'
-
+        time.sleep(random.randrange(0, 2))
         # This will end the game & ask the User if they wish to start again
 
         game_over("Leaving so soon... Fine chicken out why don't you...")
@@ -247,22 +253,23 @@ def deeper_forest():
 
     answer = input('>')
     while answer not in ['1', '2', '0']:
+        time.sleep(random.randrange(0, 2))
         print('Seriously dude, make a choice')
         answer = input('>')
     if answer == '1':
-
+        time.sleep(random.randrange(0, 2))
         # Swing across like Tarzan result = Game Over
 
         game_over('''What the frell. This is not a movie.
         How could you possibly think you could swing on a vine''')
     elif answer == '2':
-
+        time.sleep(random.randrange(0, 2))
         # Walk along the edge to find a safer way across = Move Forward
 
         gorge()
     else:
         answer == '0'
-
+        time.sleep(random.randrange(0, 2))
         # This will end the game & ask the User if they wish to start again
 
         game_over("So I guess you don't need the Dragon's answers")
@@ -283,23 +290,24 @@ def gorge():
 
     answer = input('>')
     while answer not in ['1', '2', '0']:
+        time.sleep(random.randrange(0, 2))
         print('Are you trying to fall off the edge, pick a direction.')
         answer = input('>')
     if answer == '1':
-
+        time.sleep(random.randrange(0, 2))
         # Carefully, but quickly, cross the rope bridge result = Game Over
 
         game_over('''You seriously thought this old thing was going to hold you.
         You have got to be kidding''')
 
     elif answer == '2':
-
+        time.sleep(random.randrange(0, 2))
         # The rope bridge looks flimsy... results = move forward
 
         deeper_desert()
     else:
         answer == '0'
-
+        time.sleep(random.randrange(0, 2))
         # This will end the game & ask the User if they wish to start again
 
         game_over("Some people just can't take the pressure...")
@@ -320,21 +328,22 @@ def ocean():
 
     answer = input('>')
     while answer not in ['1', '2', '0']:
+        time.sleep(random.randrange(0, 2))
         print('You will get tired if you stay where you are!')
         answer = input('>')
     if answer == '1':
-
+        time.sleep(random.randrange(0, 2))
         # Swim for it and hope for the best result = Game Over
 
         game_over('Seriously, ocean in all directions where are you going')
     elif answer == '2':
-
+        time.sleep(random.randrange(0, 2))
         # Dive down to the depths below = Move onto the desert step four
 
         pond()
     else:
         answer == '0'
-
+        time.sleep(random.randrange(0, 2))
         # This will end the game & ask the User if they wish to start again
 
         game_over('Seriously, You really should get lessons.')
@@ -343,6 +352,7 @@ def ocean():
 # Game_over function that prints the reason from the initiating step
 
 def game_over(reason):
+    time.sleep(random.randrange(0, 3))
     print('\n' + reason)
     print('Game Over!')
 
@@ -354,6 +364,7 @@ def game_over(reason):
 # Function which enables the user to restart the game
 
 def play_again():
+    time.sleep(random.randrange(0, 3))
     print('\nDo you want to play again?')
     answer = input('>').lower()
     if 'y' in answer:
