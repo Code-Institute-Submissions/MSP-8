@@ -138,6 +138,7 @@ def start(name):
 def desert():
     cprint('\nYou have chosen the yellow door', 'grey', 'on_yellow')
     cprint('All other doors disappear as you choose', 'grey', 'on_yellow')
+    time.sleep(random.randrange(0, 2))
     cprint('''As soon as the door opens, you are hit by a blast of heat.\n
               \  :  /
                ' _ '
@@ -155,6 +156,7 @@ def desert():
           ```        \"\ 
                ~~     ^~^                    ''', 'grey', 'on_yellow')
     cprint('''You are in the middle of the desert''', 'grey', 'on_yellow')
+    time.sleep(random.randrange(0, 2))
     cprint('\nWhere do you go from here? (1, 2 or 0)')
     cprint('1). Head straight into the dunes')
     cprint('2). Turn right and hope to find an end to this heat')
