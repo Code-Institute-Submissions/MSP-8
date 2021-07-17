@@ -194,9 +194,9 @@ def desert():
 # SECOND step (deeper into desert journey) in the yellow door/desert pathway
 
 def deeper_desert():
-    print('\nIn front of you stretches desert for miles and miles', 'yellow')
-    print('After stumbling forward for what feels like eternity,', 'yellow')
-    print('you think you see an oasis off in the distance', 'yellow')
+    cprint('\nIn front of you stretches desert for miles and miles', 'yellow')
+    cprint('After stumbling forward for what feels like eternity,', 'yellow')
+    cprint('you think you see an oasis off in the distance', 'yellow')
     cprint('''                         \       /            _\/_
                              .-'-.              //o\  _\/_
           _  ___  __  _ --_ /     \ _--_ __  __ _ | __/o\\ _
@@ -646,14 +646,14 @@ def play_again():
 # The following function is the initial step of the journey
 
 def dragon():
-    print('\nAmazing, you actually made it.', 'magenta')
+    cprint('\nAmazing, you actually made it.', 'magenta')
     time.sleep(random.randrange(0, 3))
     cprint('''                 ___====-_  _-====___
                    _--^^^#####//      \\#####^^^--_
                 _-^##########// (    ) \\##########^-_
                -############//  |\^^/|  \\############-
              _/############//   (@::@)   \\############\_
-            /#############((     \\//     ))#############\
+            /#############((     \\//     ))#############\ 
            -###############\\    (oo)    //###############-
           -#################\\  / VV \  //#################-
          -###################\\/      \//###################-
@@ -665,8 +665,8 @@ def dragon():
                            __\ | |  | | /__
                           (vvv(VVV)(VVV)vvv)''',  'magenta')
     time.sleep(random.randrange(0, 3))
-    print('\nAsk you question and receive infinate wisdom:')
-    print('\nBut beware, you can only ask THREE!!!\n')
+    cprint('\nAsk you question and receive infinate wisdom:')
+    cprint('\nBut beware, you can only ask THREE!!!\n')
     i = 1
     while i < 4:
 
