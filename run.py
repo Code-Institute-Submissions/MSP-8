@@ -395,6 +395,20 @@ def forest():
 def deeper_forest():
     print('\nYou forge a path forward throw the thick undergrowth')
     print('Eventually you reach a large gorge')
+    cprint('''
+           _________....-~    ~-.______
+        ~~~                            ~~~~-----...___________..--------
+                                                   |   |     |
+                                                   | |   |  ||
+                                                   |  |  |   |
+                                                   |'. .' .`.|
+        ___________________________________________|0oOO0oO0o|____________
+         -          -         -       -      -    / '  '. ` ` \    -    -
+              --                  --       --   /    '  . `   ` \    --
+        ---            ---          ---       /  '                \ ---
+             ----               ----        /       ' ' .    ` `    \  ----
+        -----         -----         ----- /   '   '        `      `   \ 
+             .-~~-.          ------     /          '    . `     `    `  \ ''')
     print('You notice some vines that hang across the gap')
     print('\nDo you? (1, 2 or 0)')
     print('1). Swing across like Tarzan')
