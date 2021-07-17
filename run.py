@@ -197,6 +197,13 @@ def deeper_desert():
     print('\nIn front of you stretches desert for miles and miles')
     print('After stumbling forward for what feels like eternity,')
     print('you think you see an oasis off in the distance')
+    cprint('''                         \       /            _\/_
+                             .-'-.              //o\  _\/_
+          _  ___  __  _ --_ /     \ _--_ __  __ _ | __/o\\ _
+        =-=-_=-=-_=-=_=-_= -=======- = =-=_=-=_,-'|"'""-|-,_ 
+         =- _=-=-_=- _=-= _--=====- _=-=_-_,-"          |
+           =- =- =-= =- = -  -===- -= - ." ''')
+    time.sleep(random.randrange(0, 2))
     print('\nDo you: (1, 2 or 0)')
     print('1). Run towards the oasis and hope that it is real')
     print('2). Convince yourself that you are hallucinating and keep going')
@@ -234,6 +241,18 @@ def deeper_desert():
 def oasis():
     print('\nUpon Reaching the oasis you find relief')
     print('in the shade of the tree branches')
+    cprint('''                ___   ____
+                /' --;^/ ,-_\     \ | /
+               / / --o\ o-\ \\   --(_)--
+              /-/-/|o|-|\-\\|\\   / | \
+               '`  ` |-|   `` '
+                     |-|
+                     |-|O
+                     |-(\,__
+                  ...|-|\--,\_....
+              ,;;;;;;;;;;;;;;;;;;;;;;;;,.
+        ~~,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;,
+        ~;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;,''')
     print('A short way into the oasis you see a small pond')
     print('\nDo you: (1, 2 or 0)')
     print('1). Have a drink before continuing into the desert')
