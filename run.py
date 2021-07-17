@@ -624,7 +624,7 @@ def game_complete(reason):
        /|    /____|____\         '-._
            ||     |   ||   |
            \\     ///\\//\\\ 
-            \|   oOO(_)(_)OOo''')
+            \|   oOO(_)(_)OOo''', 'cyan')
     print('Game Over!')
 
     # asks the User if they wish to begin the game again
