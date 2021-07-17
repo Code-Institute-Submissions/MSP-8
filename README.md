@@ -62,12 +62,12 @@ The command-line application must be clear and concise. It should display, at a 
 - the ability to quit the game at any stage by pressing 'q'
 
 The following is a rough wireframe of the prdicted logical flow of the program
-![initial logic concept]()
+![initial logic concept](url"https://github.com/Sphere42/MSP-3/blob/main/assets/readme/Logic%20Flow.PNG")
 
 
 # Final/Existing Feature Outcomes
 The final command-line application logic will be as follows:
-![finallogic]()
+![finallogic](url"")
 
 The final game will appear as follows:
 
