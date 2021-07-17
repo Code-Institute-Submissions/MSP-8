@@ -7,12 +7,13 @@ The purpose of Milestone Project 3 is to create a a text based choose your own a
 The Project will enable a user to:
 - Partake in a mini adventure game
 - Manipulate the direction of the story line via manual input
-- 
+- Be entertained with imagry and jokes
 
 ## Benefits and Rational
 
 Such an application will:
-- 
+- Provide an entertaining game for the User to play. 
+- The application will use imagry and jokes to amuse the user
 
 ## User Stories
 
@@ -23,29 +24,35 @@ Business Case User stories:
 - As a User I want to be able to deploy and play the command-line application easily.
 - As a User I want to be able to navigate throughout the story with easy
 - As a User I want all errors clearly explained and corrective actions available
+- As a User I want all invalid inputs handled correctly and have the ability to proceed
 - As a User I want the adventure to have a clear begining, middle, and ending
-
+- As a User I want to be able to clearly determine when each step starts/finish
+- As a User I want the ability to quit the game at any stage
+- As a User I want the ability to know when input is required
 
 Functional Developer stories:
+
 -	As a Developer I want to ensure the command-line application python code passes through the official validator without faults/errors/warnings
 -	As a Developer I want to ensure all intended functionality works as per critial project objectives.
 -	As a Developer I want to ensure that all code means the minimum standards for readability as per PEP8
 -	As a Developer I want to ensure the command-line application is responsive to User interaction
--   As a Developer I want to ensure the command-line application handles incorrect User Input
+- As a Developer I want to ensure the command-line application handles incorrect User Input
 -	As a Developer I want to ensure there are details (wireframes and final text sections) within the README document
 -	As a Developer I want to ensure the web application meets accessibility guidelines
 -	As a Developer I want to be able to easily deploy this command-line application to the cloud as per the Code Institutes requirements
-- 	As a Developer I want to ensure Github is used for version control of the developing code
+- As a Developer I want to ensure Github is used for version control of the developing code
+- As a Developeer I want to utilise ASCI imagry to enhance the User experience
 *Interpreted from the Assignment document*
 
 
 # Functional Requirements Scope
 
 ## Design Consistancies
+
 The following is a list of design aspects that must be maintained throughout the command-line application. 
 
 The command-line application must be clear and concise. It should display, at a minimun:
-- Display a message for each page
+- Display a message/image upon each user input
 - Change the next step of the story based on User input
 - Show a message if incorrect input have been entered
 - Lead the user throw a maze of steps to "meet the Dragon"
@@ -54,15 +61,17 @@ The command-line application must be clear and concise. It should display, at a 
 - If the User attempts to ask more then three questions, "the Dragon" will get angry and return the user to the start of the game
 - the ability to quit the game at any stage by pressing 'q'
 
-
+The following is a rough wireframe of the prdicted logical flow of the program
 ![initial logic concept]()
 
 
 # Final/Existing Feature Outcomes
 The final command-line application logic will be as follows:
+![finallogic]()
 
+The final game will appear as follows:
 
-
+![finalmultiview](url"")
 
 # Future Features to be Implemented
 
