@@ -87,7 +87,7 @@ Full details and evidence of testing conducted throughout the software developme
 
 Once the command-line application had been deployed the Python code was passed through the official PEP8 code validator
 
-![pythonvalidator]()
+
 
 All functions have been manually selected to ensure all information has been correctly populated and displayed
 
