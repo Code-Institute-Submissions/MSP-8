@@ -445,8 +445,8 @@ def deeper_forest():
 # THIRD step (crossing the gorge) in the green door/forest pathway
 
 def gorge():
-    print('\nYou walk along the edge until the sun is low in the sky', 'green')
-    print('Just as you are about to give up you see a rope bridge ahead', 'green')
+    cprint('\nYou walk along the edge until the sun is low in the sky', 'green')
+    cprint('Just as you are about to give up you see a rope bridge ahead', 'green')
     cprint('''                             ___....___
                      __..-:'':__:..:__:'':-..__
                  _.-:__:.-:'':  :  :  :'':-.:__:-._
