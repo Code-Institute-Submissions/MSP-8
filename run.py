@@ -239,8 +239,8 @@ def deeper_desert():
 # THIRD step (oasis step the desert journey) in the yellow door/desert pathway
 
 def oasis():
-    print('\nUpon Reaching the oasis you find relief', 'yellow')
-    print('in the shade of the tree branches', 'yellow')
+    cprint('\nUpon Reaching the oasis you find relief', 'yellow')
+    cprint('in the shade of the tree branches', 'yellow')
     cprint('''                ___   ____
                 /' --;^/ ,-_\     \ | /
                / / --o\ o-\ \\   --(_)--
@@ -253,7 +253,7 @@ def oasis():
               ,;;;;;;;;;;;;;;;;;;;;;;;;,.
         ~~,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;,
         ~;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;,''', 'yellow')
-    print('A short way into the oasis you see a small pond', 'yellow')
+    cprint('A short way into the oasis you see a small pond', 'yellow')
     print('\nDo you: (1, 2 or 0)')
     print('1). Have a drink before continuing into the desert')
     print('2). Dive in and enjoy a swim in the cool water')
