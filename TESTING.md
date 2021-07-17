@@ -101,7 +101,8 @@ Each round of testing will contain the following information:
         Test Results:
 
 
-        Planned Functionality to be developed
+        Planned Functionality to be developed:
+                Not applicable
 
 
 ![evidence]()
