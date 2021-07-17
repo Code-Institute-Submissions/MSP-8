@@ -54,9 +54,25 @@ def start():
 def desert():
     print('\nYou have chosen the yellow door')
     print('All other doors disappear as you reach out for the door handle')
-    print('As soon as the door opens, you are hit by a blast of heat.')
+    print('As soon as the door opens, you are hit by a blast of heat.\n')
+    print("                 .                       ")
+    print("          \  :  /                        ")
+    print("           ' _ '                         ")
+    print("       -= ( (_) ) =-                     ")
+    print("           .   .                         ")
+    print("          /  :  \                        ")
+    print("      .-.    '                           ")
+    print("      |.|                                ")
+    print("    /)|`|(\                              ")
+    print("   (.(|'|)`)                             ")
+    print("~~~~`\`'./'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    print("      |.|           ~~                   ")
+    print("      |`|                            ~~  ")
+    print("     ,|'|.      (_)          ~~          ")
+    print("      '''        \'\                     ")
+    print("           ~~     ^~^                    ")
     print('You are in the middle of the desert.')
-    print('\nWhich do you choose? (1, 2 or 0)')
+    print('\nWhere do you go from here? (1, 2 or 0)')
     print('1). Head straight into the dunes')
     print('2). Turn right and hope to find an end to this heat')
     print("0). Nah, I'm out, I need Air conditioning")
@@ -91,7 +107,7 @@ def desert():
 # SECOND step (deeper into desert journey) in the yellow door/desert pathway
 
 def deeper_desert():
-    print('\In front of you stretches desert for miles and miles')
+    print('\nIn front of you stretches desert for miles and miles')
     print('After stumbling forward for what feels like eternity,')
     print('you think you see an oasis off in the distance')
     print('\nDo you: (1, 2 or 0)')
@@ -393,15 +409,33 @@ def play_again():
 
 def dragon():
     print('\nAmazing, you actually made it.')
-    print('\nYou now stand before the Dragon')
+    time.sleep(random.randrange(0, 3))
+    print('\nYou now stand before the Dragon\n')
+    print("                 ___====-_  _-====___                 ")
+    print("           _--^^^#####//      \\#####^^^--_           ")
+    print("        _-^##########// (    ) \\##########^-_        ")
+    print("       -############//  |\^^/|  \\############-       ")
+    print("     _/############//   (@::@)   \\############\_     ")
+    print("    /#############((     \\//     ))#############\    ")
+    print("   -###############\\    (oo)    //###############-   ")
+    print("  -#################\\  / VV \  //#################-  ")
+    print(" -###################\\/      \//###################- ")
+    print("_#/|##########/\######(   /\   )######/\##########|\#_")
+    print("|/ |#/\#/\#/\/  \#/\##\  |  |  /##/\#/  \/\#/\#/\#| \|")
+    print("`  |/  V  V  `   V  \#\| |  | |/#/  V   '  V  V  \|  '")
+    print("   `   `  `      `   / | |  | | \   '      '  '   '   ")
+    print("                    (  | |  | |  )                    ")
+    print("                   __\ | |  | | /__                   ")
+    print("                  (vvv(VVV)(VVV)vvv)                  ")
+    time.sleep(random.randrange(0, 3))
     print('\nAsk you question and receive infinate wisdom:')
-    print('\nBut beware, you only get three chances\n')
+    print('\nBut beware, you can only ask THREE!!!\n')
     i = 1
     while i < 4:
 
         # User input to transition to the next stage
 
-        answer = input('What be thy question')
+        answer = input('What be thy question?\n')
         print('Thinking...\n')
         time.sleep(random.randrange(0, 3))
         print(random.choice(dragon_talk))
