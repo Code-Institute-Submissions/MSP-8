@@ -288,7 +288,27 @@ def oasis():
 # FOURTH step (deeper into desert journey) in the yellow door/desert pathway
 
 def pond():
+            time.sleep(random.randrange(0, 2))
+    cprint('''        __
+           .-;'`  `'-.
+          /   \       `\_..
+          |-"``;-.      || `\ 
+           \    '.`-.   /|  /
+            `-.   '. \  |-'`
+               `-.  ) \ |
+                /` /  / |
+               / /`   | |
+              / (     ) /
+            _(   `-,-'_/
+           /  `""""";`
+           `---..---'
+              //\\
+             //---0
+           _//_____
+                   `\ 
+                    (~^~_-~^-~^_~^~^-~^_ ''')
     print('\nWhile swimming you notice a small cave within the shallows')
+    time.sleep(random.randrange(0, 2))
     print('\nDo you: (1, 2 or 0)')
     print('1). Take a deep breath and dive into the unknown')
     print('2). Keep swimming and forget about the cave')
@@ -464,7 +484,17 @@ def gorge():
 def ocean():
     print('\nYou have chosen the blue door')
     print('All other doors disappear as you reach out for the door handle')
+    time.sleep(random.randrange(0, 2))
+    cprint('''                                  .-"""-.
+                             /       \ 
+                            ;_.-"""-._;
+         .,_       __,.---.-(=(o)-(o)=)-.---.,__       _,.
+         '._'--"```          \   ^   /          ```"--'_.'
+            ``"''~---~~%^%^.%.`._0_.'%,^%^%^~~---~''"``
+            ~^~- `^-% ^~.%~%.^~-%-~.%-^.% ~`% ~-`%^`-~^~
+               ~^- ~^- `~.^- %`~.%~-'%~^- %~^- ~^ ''')
     print('After opening the door you are plunged into the deep, dark ocean')
+    time.sleep(random.randrange(0, 2))
     print('\nWhich do you choose? (1, 2 or 0)')
     print('1). Swim for it and hope for the best')
     print('2). Dive down and see what is below')
