@@ -115,7 +115,7 @@ def start(name):
 
 def desert():
     cprint('\nYou have chosen the yellow door', 'grey', 'on_yellow')
-    cprint('''All other doors disappear as you choose''', 'grey', 'on_yellow')
+    cprint('All other doors disappear as you choose', 'grey', 'on_yellow')
     cprint('''As soon as the door opens, you are hit by a blast of heat.\n
               \  :  /
                ' _ '
@@ -281,10 +281,20 @@ def pond():
 # FIRST step (forest journey) in the green door/forest pathway
 
 def forest():
-    print('\nYou have chosen the green door')
-    print('All other doors disappear as you reach out for the door handle')
-    print('After opening the door you find yourself...')
-    print('in the middle of a tropical forest')
+    cprint('\nYou have chosen the green door', 'grey', 'on_green')
+    cprint('All other doors disappear as you choose', 'grey', 'on_green')
+    cprint('After opening the door you find yourself', 'grey', 'on_green')
+    cprint('''      /\             /\             /\      
+     /\*\           /\*\           /\*\     
+    /\O\*\         /\O\*\         /\O\*\    
+   /*/\/\/\       /*/\/\/\       /*/\/\/\   
+  /\O\/\*\/\     /\O\/\*\/\     /\O\/\*\/\  
+ /\*\/\*\/\/\   /\*\/\*\/\/\   /\*\/\*\/\/\ 
+/\O\/\/*/\/O/\ /\O\/\/*/\/O/\ /\O\/\/*/\/O/\ 
+      ||             ||             ||      
+      ||             ||             ||      
+      ||             ||             ||''', 'grey', 'on_green')
+    cprint('in the middle of a tropical forest', 'grey', 'on_green')
     print('\nWhich do you choose? (1, 2 or 0)')
     print('1). Try to forge a path forward deeper into the undergrowth')
     print('2). Climb the biggest tree you can find, for a better view')
@@ -488,7 +498,7 @@ def play_again():
     print('\nDo you want to play again?')
     answer = input('>').lower()
     if 'y' in answer:
-        start()
+        begin()
     else:
         exit()
 
