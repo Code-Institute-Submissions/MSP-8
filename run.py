@@ -1,6 +1,6 @@
 import random
 import time
-import termcolor
+from termcolor import cprint
 
 # begining of the game, obtaining Users Name for a personalised experience
 
@@ -48,24 +48,24 @@ def start(name):
     print('To begin, you walk down a long, dark corridor')
     print('At the end you are faced with three doors')
     print('Which do you choose? (1, 2 or 3)\n')
-    termcolor.cprint("   _____   ", 'yellow')
-    termcolor.cprint("  /_____\  ", 'yellow')
-    termcolor.cprint("  |  |  |      1) Bright Yellow door", 'yellow')
-    termcolor.cprint("  |  |  |          to the left", 'yellow')
-    termcolor.cprint(" @|__|__|@ ", 'yellow')
-    termcolor.cprint(" --=====-- \n", 'yellow')
-    termcolor.cprint("   _____   ", 'green')
-    termcolor.cprint("  /_____\  ", 'green')
-    termcolor.cprint("  |  |  |      2) Deep Green door", 'green')
-    termcolor.cprint("  |  |  |          directly ahead", 'green')
-    termcolor.cprint(" @|__|__|@ ", 'green')
-    termcolor.cprint(" --=====-- \n", 'green')
-    termcolor.cprint("   _____   ", 'blue')
-    termcolor.cprint("  /_____\  ", 'blue')
-    termcolor.cprint("  |  |  |      2) Pale Blue door", 'blue')
-    termcolor.cprint("  |  |  |          to the right", 'blue')
-    termcolor.cprint(" @|__|__|@ ", 'blue')
-    termcolor.cprint(" --=====-- ", 'blue')
+    cprint("   _____   ", 'yellow')
+    cprint("  /_____\  ", 'yellow')
+    cprint("  |  |  |      1) Bright Yellow door", 'yellow')
+    cprint("  |  |  |          to the left", 'yellow')
+    cprint(" @|__|__|@ ", 'yellow')
+    cprint(" --=====-- \n", 'yellow')
+    cprint("   _____   ", 'green')
+    cprint("  /_____\  ", 'green')
+    cprint("  |  |  |      2) Deep Green door", 'green')
+    cprint("  |  |  |          directly ahead", 'green')
+    cprint(" @|__|__|@ ", 'green')
+    cprint(" --=====-- \n", 'green')
+    cprint("   _____   ", 'blue')
+    cprint("  /_____\  ", 'blue')
+    cprint("  |  |  |      2) Pale Blue door", 'blue')
+    cprint("  |  |  |          to the right", 'blue')
+    cprint(" @|__|__|@ ", 'blue')
+    cprint(" --=====-- ", 'blue')
     print('\n0). Runaway while you can coward......')
 
     # Accept user input, allowing choices, option to quit and invalid function
@@ -76,14 +76,14 @@ def start(name):
 
     while answer not in ['1', '2', '3', '0']:
         time.sleep(random.randrange(0, 2))
-        termcolor.cprint("  _   _   _   _   _   _   _   _   _   _  ", 'red')
-        termcolor.cprint("_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_", 'red')
-        termcolor.cprint("-| |-| |-| |-| |-| |-| |-| |-| |-| |-| |-", 'red')
-        termcolor.cprint(" | | | | | | | | | | | | | | | | | | | | ", 'red')
-        termcolor.cprint("_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_", 'red')
-        termcolor.cprint("-| |-| |-| |-| |-| |-| |-| |-| |-| |-| |-", 'red')
-        termcolor.cprint(" |_| |_| |_| |_| |_| |_| |_|||_| |_| |_| ", 'red')
-        termcolor.cprint(",,,,,,||,,,,,,,,,,,,,,,,,,,,||,,,,,,,,,,,", 'red')
+        cprint("  _   _   _   _   _   _   _   _   _   _  ", 'red')
+        cprint("_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_", 'red')
+        cprint("-| |-| |-| |-| |-| |-| |-| |-| |-| |-| |-", 'red')
+        cprint(" | | | | | | | | | | | | | | | | | | | | ", 'red')
+        cprint("_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_", 'red')
+        cprint("-| |-| |-| |-| |-| |-| |-| |-| |-| |-| |-", 'red')
+        cprint(" |_| |_| |_| |_| |_| |_| |_|||_| |_| |_| ", 'red')
+        cprint(",,,,,,||,,,,,,,,,,,,,,,,,,,,||,,,,,,,,,,,", 'red')
         print(f'Ah here {name}, You just run into the wall,')
         print('How about you try using a door...')
         answer = input('>')
@@ -114,30 +114,29 @@ def start(name):
 # FIRST step (desert journey) in the yellow door/desert pathway
 
 def desert():
-    print('\nYou have chosen the yellow door')
-    print('All other doors disappear as you reach out for the door handle')
-    print('As soon as the door opens, you are hit by a blast of heat.\n')
-    print("                 .                       ")
-    print("          \  :  /                        ")
-    print("           ' _ '                         ")
-    print("       -= ( (_) ) =-                     ")
-    print("           .   .                         ")
-    print("          /  :  \                        ")
-    print("      .-.    '                           ")
-    print("      |.|                                ")
-    print("    /)|`|(\                              ")
-    print("   (.(|'|)`)                             ")
-    print("~~~~`\`'./'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-    print("      |.|           ~~                   ")
-    print("      |`|                            ~~  ")
-    print("     ,|'|.      (_)          ~~          ")
-    print("      '''        \'\                     ")
-    print("           ~~     ^~^                    ")
-    print('You are in the middle of the desert.')
-    print('\nWhere do you go from here? (1, 2 or 0)')
-    print('1). Head straight into the dunes')
-    print('2). Turn right and hope to find an end to this heat')
-    print("0). Nah, I'm out, I need Air conditioning")
+    cprint('\nYou have chosen the yellow door', 'grey', 'on_yellow')
+    cprint('''All other doors disappear as you choose''', 'grey', 'on_yellow')
+    cprint('''As soon as the door opens, you are hit by a blast of heat.\n
+              \  :  /
+               ' _ '
+           -= ( (_) ) =-
+               .   .
+              /  :  \ 
+          .-.    '
+          |.|
+        /)|`|(\ 
+       (.(|'|)`)
+    ~~~~`\`'./'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+          |.|           ~~
+          |`|                            ~~
+         ,|`|.      (_)          ~~
+          ```        \"\ 
+               ~~     ^~^                    ''', 'grey', 'on_yellow')
+    cprint('''You are in the middle of the desert''', 'grey', 'on_yellow')
+    cprint('\nWhere do you go from here? (1, 2 or 0)')
+    cprint('1). Head straight into the dunes')
+    cprint('2). Turn right and hope to find an end to this heat')
+    cprint("0). Nah, I'm out, I need Air conditioning")
 
     # Accept user input, allowing choices, option to quit and invalid function
 
