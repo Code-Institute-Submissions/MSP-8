@@ -66,16 +66,18 @@ The following is a rough wireframe of the prdicted logical flow of the program
 
 
 # Final/Existing Feature Outcomes
-The final command-line application logic will be as follows:
-![finallogic](url"")
+The final command-line application happy path logic will be as follows:
+![finallogic](url"https://github.com/Sphere42/MSP-3/blob/main/assets/readme/happypath.PNG")
 
 The final game will appear as follows:
 
 ![finalmultiview](url"")
 
 # Future Features to be Implemented
-
-
+      - Additional steps to extend the game
+      - Additional options to the existing screens
+      - Additional responses from the Dragon
+      - Option to collect a weapon, maybe defect the Dragon
 
 # Testing 
 
