@@ -135,7 +135,7 @@ def start(name):
 
 # FIRST step (desert journey) in the yellow door/desert pathway
 
-def desert(name):
+def desert():
     cprint('\nYou have chosen the yellow door', 'yellow')
     cprint('All other doors disappear as you choose', 'yellow')
     time.sleep(random.randrange(0, 2))
