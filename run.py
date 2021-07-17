@@ -76,6 +76,14 @@ def start(name):
 
     while answer not in ['1', '2', '3', '0']:
         time.sleep(random.randrange(0, 2))
+        termcolor.cprint("  _   _   _   _   _   _   _   _   _   _  ", 'grey')
+        termcolor.cprint("_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_", 'grey')
+        termcolor.cprint("-| |-| |-| |-| |-| |-| |-| |-| |-| |-| |-", 'grey')
+        termcolor.cprint(" | | | | | | | | | | | | | | | | | | | | ", 'grey')
+        termcolor.cprint("_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_", 'grey')
+        termcolor.cprint("-| |-| |-| |-| |-| |-| |-| |-| |-| |-| |-", 'grey')
+        termcolor.cprint(" |_| |_| |_| |_| |_| |_| |_|||_| |_| |_| ", 'grey')
+        termcolor.cprint(",,,,,,||,,,,,,,,,,,,,,,,,,,,||,,,,,,,,,,,", 'grey')
         print(f'Ah here {name}, You just run into the wall,')
         print('How about you try using a door...')
         answer = input('>')
