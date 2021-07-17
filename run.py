@@ -1,5 +1,6 @@
 import random
 import time
+import termcolor
 
 # begining of the game, obtaining Users Name for a personalised experience
 
@@ -37,20 +38,35 @@ def begin():
     name = input("By what name are you known?:\n").capitalize()
     time.sleep(random.randrange(0, 2))
     print(f"Welcome Mighty {name}!")
-    start()
+    start(name)
 
 # The following function is the initial step of the journey
 
-def start():
-    print('\nSo, you seek the wisdom of the Dragon to answer your questions?')
+def start(name):
+    print('\nYou seek the wisdom of the Dragon to answer your questions?')
     print('\nThe journey is long and arguous, but rewarding!')
     print('To begin, you walk down a long, dark corridor')
     print('At the end you are faced with three doors')
-    print('\nWhich do you choose? (1, 2 or 3)')
-    print('\n1). Bright Yellow door to the left')
-    print('2). Deep Green door directly ahead')
-    print('3). Brilliant Blue door to the right')
-    print('0). Runaway while you can coward......')
+    print('Which do you choose? (1, 2 or 3)\n')
+    termcolor.cprint("   _____   ", 'yellow')
+    termcolor.cprint("  /_____\  ", 'yellow')
+    termcolor.cprint("  |  |  |      1) Bright Yellow door", 'yellow')
+    termcolor.cprint("  |  |  |          to the left", 'yellow')
+    termcolor.cprint(" @|__|__|@ ", 'yellow')
+    termcolor.cprint(" --=====-- \n", 'yellow')
+    termcolor.cprint("   _____   ", 'green')
+    termcolor.cprint("  /_____\  ", 'green')
+    termcolor.cprint("  |  |  |      2) Deep Green door", 'green')
+    termcolor.cprint("  |  |  |          directly ahead", 'green')
+    termcolor.cprint(" @|__|__|@ ", 'green')
+    termcolor.cprint(" --=====-- \n", 'green')
+    termcolor.cprint("   _____   ", 'blue')
+    termcolor.cprint("  /_____\  ", 'blue')
+    termcolor.cprint("  |  |  |      2) Pale Blue door", 'blue')
+    termcolor.cprint("  |  |  |          to the right", 'blue')
+    termcolor.cprint(" @|__|__|@ ", 'blue')
+    termcolor.cprint(" --=====-- ", 'blue')
+    print('\n0). Runaway while you can coward......')
 
     # Accept user input, allowing choices, option to quit and invalid function
 
@@ -60,7 +76,7 @@ def start():
 
     while answer not in ['1', '2', '3', '0']:
         time.sleep(random.randrange(0, 2))
-        print('Ah here, You just run into the wall,')
+        print(f'Ah here {name}, You just run into the wall,')
         print('How about you try using a door...')
         answer = input('>')
     if answer == '1':
