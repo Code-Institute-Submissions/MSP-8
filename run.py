@@ -186,7 +186,7 @@ def desert():
         game_over('''There is no end to this heat.
         You end up lost in the expanse of sand,
         looks like you won't be seeing the Dragon today.''')
-    
+
     # This will end the game & ask the User if they wish to start again
     else:
         answer == '0'
@@ -481,13 +481,13 @@ def gorge():
     # Accept user input, allowing choices, option to quit and invalid function
 
     answer = input('>')
-    
+
     # Handles invalid user input
     while answer not in ['1', '2', '0']:
         time.sleep(random.randrange(0, 2))
         print('Are you trying to fall off the edge, pick a direction.')
         answer = input('>')
-    
+
     # Carefully, but quickly, cross the rope bridge result = Game Over
     if answer == '1':
         time.sleep(random.randrange(0, 2))
@@ -541,12 +541,12 @@ def ocean():
     if answer == '1':
         time.sleep(random.randrange(0, 2))
         game_over('Seriously, ocean in all directions where are you going')
-    
+
     # Dive down to the depths below = Move onto the desert step four
     elif answer == '2':
         time.sleep(random.randrange(0, 2))
         pond()
-    
+
     # This will end the game & ask the User if they wish to start again
     else:
         answer == '0'
