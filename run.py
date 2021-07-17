@@ -497,8 +497,8 @@ def gorge():
 # FIRST (and only) step (ocean journey) in the blue door/ocean pathway
 
 def ocean():
-    print('\nYou have chosen the blue door', 'blue')
-    print('All other doors disappear as you choose', 'blue')
+    cprint('\nYou have chosen the blue door', 'blue')
+    cprint('All other doors disappear as you choose', 'blue')
     time.sleep(random.randrange(0, 2))
     cprint('''                                  .-"""-.
                              /       \ 
@@ -507,8 +507,8 @@ def ocean():
          '._'--"```          \   ^   /          ```"--'_.'
             ``"''~---~~%^%^.%.`._0_.'%,^%^%^~~---~''"``
             ~^~- `^-% ^~.%~%.^~-%-~.%-^.% ~`% ~-`%^`-~^~
-               ~^- ~^- `~.^- %`~.%~-'%~^- %~^- ~^ ''')
-    print('You are plunged into the deep, dark ocean', 'blue')
+               ~^- ~^- `~.^- %`~.%~-'%~^- %~^- ~^ ''', 'blue')
+    cprint('You are plunged into the deep, dark ocean', 'blue')
     time.sleep(random.randrange(0, 2))
     print('\nWhich do you choose? (1, 2 or 0)')
     print('1). Swim for it and hope for the best')
