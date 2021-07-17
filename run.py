@@ -66,7 +66,7 @@ def start(name):
         |.'.','         /%%%%%%%%%%%%%\         ','.'.|
         |.','          /%%%%%%%%%%%%%%%\          ','.|
         |;____________/%%%%%%%%%%%%%%%%%\____________;| ''')
-    print('To begin, you walk down a long, dark corridor')
+    print('\nTo begin, you walk down a long, dark corridor')
     print('At the end you are faced with three doors')
     time.sleep(random.randrange(0, 2))
     print('Which do you choose? (1, 2 or 3)\n')
@@ -135,9 +135,9 @@ def start(name):
 
 # FIRST step (desert journey) in the yellow door/desert pathway
 
-def desert():
-    cprint('\nYou have chosen the yellow door', 'grey', 'on_yellow')
-    cprint('All other doors disappear as you choose', 'grey', 'on_yellow')
+def desert(name):
+    cprint('\nYou have chosen the yellow door', 'yellow')
+    cprint('All other doors disappear as you choose', 'yellow')
     time.sleep(random.randrange(0, 2))
     cprint('''As soon as the door opens, you are hit by a blast of heat.\n
               \  :  /
@@ -154,8 +154,8 @@ def desert():
           |`|                            ~~
          ,|`|.      (_)          ~~
           ```        \"\ 
-               ~~     ^~^                    ''', 'grey', 'on_yellow')
-    cprint('''You are in the middle of the desert''', 'grey', 'on_yellow')
+               ~~     ^~^                    ''', 'yellow')
+    cprint('''You are in the middle of the desert''', 'yellow')
     time.sleep(random.randrange(0, 2))
     cprint('\nWhere do you go from here? (1, 2 or 0)')
     cprint('1). Head straight into the dunes')
@@ -194,15 +194,15 @@ def desert():
 # SECOND step (deeper into desert journey) in the yellow door/desert pathway
 
 def deeper_desert():
-    print('\nIn front of you stretches desert for miles and miles')
-    print('After stumbling forward for what feels like eternity,')
-    print('you think you see an oasis off in the distance')
+    print('\nIn front of you stretches desert for miles and miles', 'yellow')
+    print('After stumbling forward for what feels like eternity,', 'yellow')
+    print('you think you see an oasis off in the distance', 'yellow')
     cprint('''                         \       /            _\/_
                              .-'-.              //o\  _\/_
           _  ___  __  _ --_ /     \ _--_ __  __ _ | __/o\\ _
         =-=-_=-=-_=-=_=-_= -=======- = =-=_=-=_,-'|"'""-|-,_ 
          =- _=-=-_=- _=-= _--=====- _=-=_-_,-"          |
-           =- =- =-= =- = -  -===- -= - ." ''')
+           =- =- =-= =- = -  -===- -= - ." ''', 'yellow')
     time.sleep(random.randrange(0, 2))
     print('\nDo you: (1, 2 or 0)')
     print('1). Run towards the oasis and hope that it is real')
@@ -239,8 +239,8 @@ def deeper_desert():
 # THIRD step (oasis step the desert journey) in the yellow door/desert pathway
 
 def oasis():
-    print('\nUpon Reaching the oasis you find relief')
-    print('in the shade of the tree branches')
+    print('\nUpon Reaching the oasis you find relief', 'yellow')
+    print('in the shade of the tree branches', 'yellow')
     cprint('''                ___   ____
                 /' --;^/ ,-_\     \ | /
                / / --o\ o-\ \\   --(_)--
@@ -252,8 +252,8 @@ def oasis():
                   ...|-|\--,\_....
               ,;;;;;;;;;;;;;;;;;;;;;;;;,.
         ~~,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;,
-        ~;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;,''')
-    print('A short way into the oasis you see a small pond')
+        ~;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;,''', 'yellow')
+    print('A short way into the oasis you see a small pond', 'yellow')
     print('\nDo you: (1, 2 or 0)')
     print('1). Have a drink before continuing into the desert')
     print('2). Dive in and enjoy a swim in the cool water')
@@ -288,26 +288,26 @@ def oasis():
 # FOURTH step (deeper into desert journey) in the yellow door/desert pathway
 
 def pond():
-            time.sleep(random.randrange(0, 2))
-    cprint('''        __
-           .-;'`  `'-.
+    time.sleep(random.randrange(0, 2))
+    cprint('''      
+           .-;``  ``-.
           /   \       `\_..
           |-"``;-.      || `\ 
-           \    '.`-.   /|  /
-            `-.   '. \  |-'`
+           \    `.`-.   /|  /
+            `-.   `. \  |-``
                `-.  ) \ |
                 /` /  / |
                / /`   | |
               / (     ) /
-            _(   `-,-'_/
+            _(   `-,-`_/
            /  `""""";`
-           `---..---'
+           `---..---`
               //\\
              //---0
            _//_____
                    `\ 
-                    (~^~_-~^-~^_~^~^-~^_ ''')
-    print('\nWhile swimming you notice a small cave within the shallows')
+                    (~^~_-~^-~^_~^~^-~^_ ''', 'blue')
+    print('\nWhile swimming you notice a cave within the shallows', 'blue')
     time.sleep(random.randrange(0, 2))
     print('\nDo you: (1, 2 or 0)')
     print('1). Take a deep breath and dive into the unknown')
@@ -344,9 +344,9 @@ def pond():
 # FIRST step (forest journey) in the green door/forest pathway
 
 def forest():
-    cprint('\nYou have chosen the green door', 'grey', 'on_green')
-    cprint('All other doors disappear as you choose', 'grey', 'on_green')
-    cprint('After opening the door you find yourself', 'grey', 'on_green')
+    cprint('\nYou have chosen the green door', 'green')
+    cprint('All other doors disappear as you choose', 'green')
+    cprint('After opening the door you find yourself', 'green')
     cprint('''      /\             /\             /\      
      /\*\           /\*\           /\*\     
     /\O\*\         /\O\*\         /\O\*\    
@@ -356,8 +356,8 @@ def forest():
 /\O\/\/*/\/O/\ /\O\/\/*/\/O/\ /\O\/\/*/\/O/\ 
       ||             ||             ||      
       ||             ||             ||      
-      ||             ||             ||''', 'grey', 'on_green')
-    cprint('in the middle of a tropical forest', 'grey', 'on_green')
+      ||             ||             ||''', 'green')
+    cprint('in the middle of a tropical forest', 'green')
     print('\nWhich do you choose? (1, 2 or 0)')
     print('1). Try to forge a path forward deeper into the undergrowth')
     print('2). Climb the biggest tree you can find, for a better view')
@@ -393,8 +393,8 @@ def forest():
 # SECOND step (finding the gorge) in the green door/forest pathway
 
 def deeper_forest():
-    print('\nYou forge a path forward throw the thick undergrowth')
-    print('Eventually you reach a large gorge')
+    print('\nYou forge a path forward throw the thick undergrowth', 'green')
+    print('Eventually you reach a large gorge', 'green')
     cprint('''
            _________....-~    ~-.______
         ~~~                            ~~~~-----...___________..--------
@@ -408,8 +408,9 @@ def deeper_forest():
         ---            ---          ---       /  '                \ ---
              ----               ----        /       ' ' .    ` `    \  ----
         -----         -----         ----- /   '   '        `      `   \ 
-             .-~~-.          ------     /          '    . `     `    `  \ ''')
-    print('You notice some vines that hang across the gap')
+             .-~~-.          ------     /          '    . `     `    `  \ 
+        ''', 'green')
+    print('You notice some vines that hang across the gap', 'green')
     print('\nDo you? (1, 2 or 0)')
     print('1). Swing across like Tarzan')
     print('2). Walk along the edge to find a safer way across')
@@ -444,8 +445,8 @@ def deeper_forest():
 # THIRD step (crossing the gorge) in the green door/forest pathway
 
 def gorge():
-    print('\nYou walk along the edge until the sun is low in the sky')
-    print('Just as you are about to give up you see a rope bridge ahead')
+    print('\nYou walk along the edge until the sun is low in the sky', 'green')
+    print('Just as you are about to give up you see a rope bridge ahead', 'green')
     cprint('''                             ___....___
                      __..-:'':__:..:__:'':-..__
                  _.-:__:.-:'':  :  :  :'':-.:__:-._
@@ -496,8 +497,8 @@ def gorge():
 # FIRST (and only) step (ocean journey) in the blue door/ocean pathway
 
 def ocean():
-    print('\nYou have chosen the blue door')
-    print('All other doors disappear as you reach out for the door handle')
+    print('\nYou have chosen the blue door', 'blue')
+    print('All other doors disappear as you choose', 'blue')
     time.sleep(random.randrange(0, 2))
     cprint('''                                  .-"""-.
                              /       \ 
@@ -507,7 +508,7 @@ def ocean():
             ``"''~---~~%^%^.%.`._0_.'%,^%^%^~~---~''"``
             ~^~- `^-% ^~.%~%.^~-%-~.%-^.% ~`% ~-`%^`-~^~
                ~^- ~^- `~.^- %`~.%~-'%~^- %~^- ~^ ''')
-    print('After opening the door you are plunged into the deep, dark ocean')
+    print('You are plunged into the deep, dark ocean', 'blue')
     time.sleep(random.randrange(0, 2))
     print('\nWhich do you choose? (1, 2 or 0)')
     print('1). Swim for it and hope for the best')
@@ -592,6 +593,16 @@ def game_quit(reasonquit):
 
     play_again()
 
+# game over message for once the game is complete
+def game_complete(reason):
+    time.sleep(random.randrange(0, 3))
+    print('\n' + reason)
+    print('Game Over!')
+
+    # asks the User if they wish to begin the game again
+
+    play_again()
+
 # Function which enables the user to restart the game
 
 def play_again():
@@ -607,25 +618,24 @@ def play_again():
 # The following function is the initial step of the journey
 
 def dragon():
-    print('\nAmazing, you actually made it.')
+    print('\nAmazing, you actually made it.', 'magenta')
     time.sleep(random.randrange(0, 3))
-    print('\nYou now stand before the Dragon\n')
-    print("                 ___====-_  _-====___                 ")
-    print("           _--^^^#####//      \\#####^^^--_           ")
-    print("        _-^##########// (    ) \\##########^-_        ")
-    print("       -############//  |\^^/|  \\############-       ")
-    print("     _/############//   (@::@)   \\############\_     ")
-    print("    /#############((     \\//     ))#############\    ")
-    print("   -###############\\    (oo)    //###############-   ")
-    print("  -#################\\  / VV \  //#################-  ")
-    print(" -###################\\/      \//###################- ")
-    print("_#/|##########/\######(   /\   )######/\##########|\#_")
-    print("|/ |#/\#/\#/\/  \#/\##\  |  |  /##/\#/  \/\#/\#/\#| \|")
-    print("`  |/  V  V  `   V  \#\| |  | |/#/  V   '  V  V  \|  '")
-    print("   `   `  `      `   / | |  | | \   '      '  '   '   ")
-    print("                    (  | |  | |  )                    ")
-    print("                   __\ | |  | | /__                   ")
-    print("                  (vvv(VVV)(VVV)vvv)                  ")
+    cprint('''                 ___====-_  _-====___
+                   _--^^^#####//      \\#####^^^--_
+                _-^##########// (    ) \\##########^-_
+               -############//  |\^^/|  \\############-
+             _/############//   (@::@)   \\############\_
+            /#############((     \\//     ))#############\
+           -###############\\    (oo)    //###############-
+          -#################\\  / VV \  //#################-
+         -###################\\/      \//###################-
+        _#/|##########/\######(   /\   )######/\##########|\#_
+        |/ |#/\#/\#/\/  \#/\##\  |  |  /##/\#/  \/\#/\#/\#| \|
+        `  |/  V  V  `   V  \#\| |  | |/#/  V   '  V  V  \|  '
+           `   `  `      `   / | |  | | \   '      '  '   '
+                            (  | |  | |  )
+                           __\ | |  | | /__
+                          (vvv(VVV)(VVV)vvv)''',  'magenta')
     time.sleep(random.randrange(0, 3))
     print('\nAsk you question and receive infinate wisdom:')
     print('\nBut beware, you can only ask THREE!!!\n')
@@ -644,7 +654,7 @@ def dragon():
             i += 1
             continue
         else:
-            game_over('Fair thee well, Oh mighty warrior!')
+            game_complete('Fair thee well, Oh mighty warrior!')
     else:
 
         # This will end the game & ask the User if they wish to start again
