@@ -393,8 +393,8 @@ def forest():
 # SECOND step (finding the gorge) in the green door/forest pathway
 
 def deeper_forest():
-    print('\nYou forge a path forward throw the thick undergrowth', 'green')
-    print('Eventually you reach a large gorge', 'green')
+    cprint('\nYou forge a path forward throw the thick undergrowth', 'green')
+    cprint('Eventually you reach a large gorge', 'green')
     cprint('''
            _________....-~    ~-.______
         ~~~                            ~~~~-----...___________..--------
@@ -410,7 +410,7 @@ def deeper_forest():
         -----         -----         ----- /   '   '        `      `   \ 
              .-~~-.          ------     /          '    . `     `    `  \ 
         ''', 'green')
-    print('You notice some vines that hang across the gap', 'green')
+    cprint('You notice some vines that hang across the gap', 'green')
     print('\nDo you? (1, 2 or 0)')
     print('1). Swing across like Tarzan')
     print('2). Walk along the edge to find a safer way across')
