@@ -355,6 +355,22 @@ def game_over(reason):
     time.sleep(random.randrange(0, 3))
     print('\n' + reason)
     print('Game Over!')
+    print("             ___        ")
+    print("            /   \\      ")
+    print("       /\\ | . . \\     ")
+    print("     ////\\|     ||     ")
+    print("   ////   \\ ___//\     ")
+    print("  ///      \\      \    ")
+    print(" ///       |\\      |   ")
+    print("//         | \\  \   \  ")
+    print("/          |  \\  \   \ ")
+    print("           |   \\ /   / ")
+    print("           |    \/   /  ")
+    print("           |     \\/|   ")
+    print("           |      \\|   ")
+    print("           |       \\   ")
+    print("           |        |   ")
+    print("           |_________\  ")
 
     # asks the User if they wish to begin the game again
 
