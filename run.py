@@ -2,6 +2,7 @@ import random
 import time
 from termcolor import cprint
 
+
 # begining of the game, obtaining Users Name for a personalised experience
 
 def begin():
@@ -40,6 +41,7 @@ def begin():
     time.sleep(random.randrange(0, 2))
     print(f"Welcome Mighty {name}!")
     start(name)
+
 
 # The following function is the initial step of the journey
 
@@ -220,7 +222,7 @@ def deeper_desert():
         print('''I know you are hot and sweaty,
         but moving forward if the only way to go!''')
         answer = input('>')
-    
+
     # Turn towards the oasis and hope that it is real result =move forward
     if answer == '1':
         time.sleep(random.randrange(0, 2))
@@ -231,7 +233,7 @@ def deeper_desert():
         time.sleep(random.randrange(0, 2))
         game_over('''What are you, Crazy?
         Like for real, who would choose the desert over an oasis!''')
-    
+
     # This will end the game & ask the User if they wish to start again
     else:
         answer == '0'
@@ -292,7 +294,7 @@ def oasis():
 
 def pond():
     time.sleep(random.randrange(0, 2))
-    cprint('''      
+    cprint('''
            .-;``  ``-.
           /   \       `\_..
           |-"``;-.      || `\ 
@@ -352,9 +354,9 @@ def forest():
     cprint('\nYou have chosen the green door', 'green')
     cprint('All other doors disappear as you choose', 'green')
     cprint('After opening the door you find yourself', 'green')
-    cprint('''      /\             /\             /\      
-     /\*\           /\*\           /\*\     
-    /\O\*\         /\O\*\         /\O\*\    
+    cprint('''      /\             /\             /\ 
+     /\*\           /\*\           /\*\ 
+    /\O\*\         /\O\*\         /\O\*\ 
    /*/\/\/\       /*/\/\/\       /*/\/\/\   
   /\O\/\*\/\     /\O\/\*\/\     /\O\/\*\/\  
  /\*\/\*\/\/\   /\*\/\*\/\/\   /\*\/\*\/\/\ 
@@ -454,8 +456,8 @@ def deeper_forest():
 # THIRD step (crossing the gorge) in the green door/forest pathway
 
 def gorge():
-    cprint('\nYou walk along the edge until the sun is low in the sky', 'green')
-    cprint('Just as you are about to give up you see a rope bridge ahead', 'green')
+    cprint('\nYou walk along the edge until the sun is low', 'green')
+    cprint('Just as you are about to give up you see a rope bridge', 'green')
     cprint('''                             ___....___
                      __..-:'':__:..:__:'':-..__
                  _.-:__:.-:'':  :  :  :'':-.:__:-._
@@ -468,8 +470,8 @@ def gorge():
   ^^^^^^^^^[ ]^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[ ]^^^^^^^^^^^
            [ ]                                        [ ]
            [ ]                                        [ ]
-     jgs   [ ]                                        [ ]
-   ~~^_~^~/   \~^-~^~ _~^-~_^~-^~_^~~-^~_~^~-~_~-^~_^/   \~^ ~~_ ^ ''', 'green')
+           [ ]                                        [ ]
+   ~~^_~^~/   \~^-~^~ _~^-~_^~-^~_^~~-^~_~^~-~_~-^~_^/   \~^ ~~_  ''', 'green')
     print('\nDo you? (1, 2 or 0)')
     print('1). Carefully, but quickly, cross the rope bridge')
     print('2). The rope bridge looks flimsy,')
@@ -604,6 +606,7 @@ def game_over(reason):
     play_again()
 
 
+# game over message if the user chooses to quit
 def game_quit(reasonquit):
     time.sleep(random.randrange(0, 3))
     print('\n' + reasonquit)
@@ -629,7 +632,9 @@ def game_quit(reasonquit):
 
     play_again()
 
+
 # game over message for once the game is complete
+
 def game_complete(reason):
     time.sleep(random.randrange(0, 3))
     print('\n' + reason)
@@ -666,6 +671,7 @@ def game_complete(reason):
     # asks the User if they wish to begin the game again
 
     play_again()
+
 
 # Function which enables the user to restart the game
 
@@ -719,12 +725,13 @@ def dragon():
             continue
         else:
             game_complete('Fair thee well, Oh mighty warrior!')
+
+    # This will end the game & ask the User if they wish to start again
     else:
-
-        # This will end the game & ask the User if they wish to start again
-
         game_over("Don't be so greedy. Begone with you!!!")
 
+
+# This is the dragon response list
 
 dragon_talk = [
     'If you Believe, then it will happen',
@@ -747,6 +754,7 @@ dragon_talk = [
     'Go hug your teddy bear',
     'Very Doubtful',
     ]
+
 
 # start the game
 
