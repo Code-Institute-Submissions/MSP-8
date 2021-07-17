@@ -76,37 +76,38 @@ def start(name):
 
     while answer not in ['1', '2', '3', '0']:
         time.sleep(random.randrange(0, 2))
-        termcolor.cprint("  _   _   _   _   _   _   _   _   _   _  ", 'grey')
-        termcolor.cprint("_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_", 'grey')
-        termcolor.cprint("-| |-| |-| |-| |-| |-| |-| |-| |-| |-| |-", 'grey')
-        termcolor.cprint(" | | | | | | | | | | | | | | | | | | | | ", 'grey')
-        termcolor.cprint("_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_", 'grey')
-        termcolor.cprint("-| |-| |-| |-| |-| |-| |-| |-| |-| |-| |-", 'grey')
-        termcolor.cprint(" |_| |_| |_| |_| |_| |_| |_|||_| |_| |_| ", 'grey')
-        termcolor.cprint(",,,,,,||,,,,,,,,,,,,,,,,,,,,||,,,,,,,,,,,", 'grey')
+        termcolor.cprint("  _   _   _   _   _   _   _   _   _   _  ", 'red')
+        termcolor.cprint("_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_", 'red')
+        termcolor.cprint("-| |-| |-| |-| |-| |-| |-| |-| |-| |-| |-", 'red')
+        termcolor.cprint(" | | | | | | | | | | | | | | | | | | | | ", 'red')
+        termcolor.cprint("_| |_| |_| |_| |_| |_| |_| |_| |_| |_| |_", 'red')
+        termcolor.cprint("-| |-| |-| |-| |-| |-| |-| |-| |-| |-| |-", 'red')
+        termcolor.cprint(" |_| |_| |_| |_| |_| |_| |_|||_| |_| |_| ", 'red')
+        termcolor.cprint(",,,,,,||,,,,,,,,,,,,,,,,,,,,||,,,,,,,,,,,", 'red')
         print(f'Ah here {name}, You just run into the wall,')
         print('How about you try using a door...')
         answer = input('>')
+
+    # lead the User into the desert adventure pathway
+
     if answer == '1':
-
-        # lead the User into the desert adventure pathway
-
+        time.sleep(random.randrange(0, 2))
         desert()
+
+    # lead the User into the forest adventure pathway
     elif answer == '2':
         time.sleep(random.randrange(0, 2))
-        # lead the User into the forest adventure pathway
-
         forest()
+
+    # lead the User into the ocean/water adventure pathway
     elif answer == '3':
         time.sleep(random.randrange(0, 2))
-        # lead the User into the ocean/water adventure pathway
-
         ocean()
+
+    # This will end the game & ask the User if they wish to start again
     else:
         answer == '0'
         time.sleep(random.randrange(0, 2))
-        # This will end the game & ask the User if they wish to start again
-
         game_over('Then what are you doing here... get lost!!!')
 
 
