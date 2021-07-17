@@ -85,7 +85,7 @@ def start(name):
     cprint(" --=====-- \n", 'green')
     cprint("   _____   ", 'blue')
     cprint("  /_____\  ", 'blue')
-    cprint("  |  |  |      2) Pale Blue door", 'blue')
+    cprint("  |  |  |      3) Pale Blue door", 'blue')
     cprint("  |  |  |          to the right", 'blue')
     cprint(" @|__|__|@ ", 'blue')
     cprint(" --=====-- ", 'blue')
