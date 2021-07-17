@@ -307,7 +307,7 @@ def pond():
            _//_____
                    `\ 
                     (~^~_-~^-~^_~^~^-~^_ ''', 'blue')
-    print('\nWhile swimming you notice a cave within the shallows', 'blue')
+    cprint('\nWhile swimming you notice a cave within the shallows', 'blue')
     time.sleep(random.randrange(0, 2))
     print('\nDo you: (1, 2 or 0)')
     print('1). Take a deep breath and dive into the unknown')
