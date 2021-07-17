@@ -108,7 +108,7 @@ def start(name):
     else:
         answer == '0'
         time.sleep(random.randrange(0, 2))
-        game_over('Then what are you doing here... get lost!!!')
+        game_quit('Then what are you doing here... get lost!!!')
 
 
 # FIRST step (desert journey) in the yellow door/desert pathway
@@ -141,9 +141,11 @@ def desert():
     # Accept user input, allowing choices, option to quit and invalid function
 
     answer = input('>')
+
+    #handles invalid input
     while answer not in ['1', '2', '0']:
         time.sleep(random.randrange(0, 2))
-        print('I know you are hot and tired, but you need to make a choice')
+        print('\nI know you are hot and tired, but you need to make a choice')
         answer = input('>')
     if answer == '1':
         time.sleep(random.randrange(0, 2))
@@ -162,7 +164,7 @@ def desert():
         time.sleep(random.randrange(0, 2))
         # This will end the game & ask the User if they wish to start again
 
-        game_over("Leaving so soon... Fine chicken out why don't you...")
+        game_quit("Leaving so soon... Fine chicken out why don't you...")
 
 
 # SECOND step (deeper into desert journey) in the yellow door/desert pathway
@@ -200,7 +202,7 @@ def deeper_desert():
         time.sleep(random.randrange(0, 2))
         # This will end the game & ask the User if they wish to start again
 
-        game_over("Oooooo, Look who can't take the heat......")
+        game_quit("Oooooo, Look who can't take the heat......")
 
 
 # THIRD step (oasis step the desert journey) in the yellow door/desert pathway
@@ -237,7 +239,7 @@ def oasis():
         time.sleep(random.randrange(0, 2))
         # This will end the game & ask the User if they wish to start again
 
-        game_over("Ooooo, Look who can't take the heat.....")
+        game_quit("Ooooo, Look who can't take the heat.....")
 
 
 # FOURTH step (deeper into desert journey) in the yellow door/desert pathway
@@ -273,7 +275,7 @@ def pond():
         time.sleep(random.randrange(0, 2))
         # This will end the game & ask the User if they wish to start again
 
-        game_over('So close and yet so far......')
+        game_quit('So close and yet so far......')
 
 
 # FIRST step (forest journey) in the green door/forest pathway
@@ -312,7 +314,7 @@ def forest():
         time.sleep(random.randrange(0, 2))
         # This will end the game & ask the User if they wish to start again
 
-        game_over("Leaving so soon... Fine chicken out why don't you...")
+        game_quit("Leaving so soon... Fine chicken out why don't you...")
 
 
 # SECOND step (finding the gorge) in the green door/forest pathway
@@ -349,7 +351,7 @@ def deeper_forest():
         time.sleep(random.randrange(0, 2))
         # This will end the game & ask the User if they wish to start again
 
-        game_over("So I guess you don't need the Dragon's answers")
+        game_quit("So I guess you don't need the Dragon's answers")
 
 
 # THIRD step (crossing the gorge) in the green door/forest pathway
@@ -387,7 +389,7 @@ def gorge():
         time.sleep(random.randrange(0, 2))
         # This will end the game & ask the User if they wish to start again
 
-        game_over("Some people just can't take the pressure...")
+        game_quit("Some people just can't take the pressure...")
 
 
 # FIRST (and only) step (ocean journey) in the blue door/ocean pathway
@@ -423,7 +425,7 @@ def ocean():
         time.sleep(random.randrange(0, 2))
         # This will end the game & ask the User if they wish to start again
 
-        game_over('Seriously, You really should get lessons.')
+        game_quit('Seriously, You really should get lessons.')
 
 
 # Game_over function that prints the reason from the initiating step
@@ -453,6 +455,31 @@ def game_over(reason):
 
     play_again()
 
+
+def game_quit(reasonquit):
+    time.sleep(random.randrange(0, 3))
+    print('\n' + reasonquit)
+    print('Game Over!')
+    cprint(''' 
+     _______________
+    |@@@@|     |####|
+    |@@@@|     |####|
+    |@@@@|     |####|
+    \@@@@|     |####/
+     \@@@|     |###/
+      `@@|_____|##'
+           (O)
+        .------.
+      .`  * * *  `.
+     :  *       *  :
+    : ~  QUITTER  ~ :
+     :  *       *  :
+      `.  * * *  .'
+        `-.....-` ''', 'red')
+
+    # asks the User if they wish to begin the game again
+
+    play_again()
 
 # Function which enables the user to restart the game
 
