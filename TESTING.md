@@ -99,14 +99,34 @@ Each round of testing will contain the following information:
                 Different colours for text
                 Use of user/player name throughout the various functions
         Test Results:
-
-
+                While there are warning messages displaying on the PEP8 python checker, these additional whitespaces are required to enable the ASCI imagry to display correctly.
+                All lines within the python run/py file are under 80 characters
+                The final planned happy path logic works without errors
+                Each input screen handles the user inputting the quit option
+                Each input screen handles the user inputting an invalid input
+                Dragon will only allow 3 questions before ending the game
+                
         Planned Functionality to be developed:
-                Not applicable
+                Not applicable all planned functionality has been implemented
 
 
-![evidence]()
-
+![pythonvalidatorpart1]("https://github.com/Sphere42/MSP-3/blob/main/assets/readme/pep8part1.PNG")
+![pythonvalidatorpart2]("https://github.com/Sphere42/MSP-3/blob/main/assets/readme/pep8part2.PNG")
+![deeperdesert]("https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/deeperdesertinvalidquit.gif")
+![desertinvalidquit]("https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/desertinvalidquit.gif")
+![dragon1]("https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/dragon1.gif")
+![dragon2]("https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/dragon2.gif")
+![dragon3]("https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/dragon3.gif")
+![dragon4]("https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/dragon4.gif")
+![forest]("https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/forest.gif")
+![forest2]("https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/forest2.gif")
+![full]("https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/full.gif")
+![fullforest]("https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/fullforest.gif")
+![fullocean]("https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/fullocean.gif")
+![gorge]("https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/gorge.gif")
+![ocean]("https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/ocean.gif")
+![pond]("https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/pond.gif")
+![ostartinvalidquit]("https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/startinvalidquit.gif")
 
 ## Compatability testing:
 
