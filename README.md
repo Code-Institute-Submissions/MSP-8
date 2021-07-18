@@ -69,7 +69,7 @@ The following is a rough wireframe of the prdicted logical flow of the program
 # Final/Existing Feature Outcomes
 The final command-line application happy path logic will be as follows:
 
-![finallogic]url(https://github.com/Sphere42/MSP-3/blob/main/assets/readme/happypath.PNG)
+![finallogic](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/happypath.PNG)
 
 The final game will appear as follows:
 
@@ -148,6 +148,9 @@ Python checker.
 
 Python formatter
 - https://codebeautify.org/
+
+ASCI imagry
+- https://www.asciiart.eu/
 
 ## Additional Thanks
 
