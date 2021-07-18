@@ -159,7 +159,7 @@ The following is the feedback provided from the end users from their exploratory
 
 ### Unfixed bugs
 
-- Colors are not appearing as bold within the mock terminal as they are within a normal system terminal.
+- Colours are not appearing as bold within the mock terminal as they are within a normal system terminal.
         - This will require changing the node.js code that formed part of the initial college template and therefore will not be corrected prior to submission
 
 
@@ -171,6 +171,7 @@ Performance testing was not conducted on this site as the web application GUI wa
 
 Once the web application had been deployed the python code was passed through the official PEP8 validator:
 
-![pep8validator]()
+![pep8validator1](https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/pep8part1.PNG)
+![pep8validator2](https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/pep8part2.PNG)
 
 All steps/pages have been visually inspected to ensure all information has been correctly populated and loaded.

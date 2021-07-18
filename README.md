@@ -22,7 +22,7 @@ Below is a high-level list of User Stories for the purposes of development, test
 Business Case User stories:
 
 - As a User I want to be able to deploy and play the command-line application easily.
-- As a User I want to be able to navigate throughout the story with easy
+- As a User I want to be able to navigate throughout the story with ease
 - As a User I want all errors clearly explained and corrective actions available
 - As a User I want all invalid inputs handled correctly and have the ability to proceed
 - As a User I want the adventure to have a clear begining, middle, and ending
@@ -32,7 +32,7 @@ Business Case User stories:
 
 Functional Developer stories:
 
--	As a Developer I want to ensure the command-line application python code passes through the official validator without faults/errors/warnings
+-	As a Developer I want to ensure the command-line application python code passes through the official validator without faults or errors
 -	As a Developer I want to ensure all intended functionality works as per critial project objectives.
 -	As a Developer I want to ensure that all code means the minimum standards for readability as per PEP8
 -	As a Developer I want to ensure the command-line application is responsive to User interaction
@@ -42,6 +42,7 @@ Functional Developer stories:
 -	As a Developer I want to be able to easily deploy this command-line application to the cloud as per the Code Institutes requirements
 - As a Developer I want to ensure Github is used for version control of the developing code
 - As a Developeer I want to utilise ASCI imagry to enhance the User experience
+
 *Interpreted from the Assignment document*
 
 
@@ -65,6 +66,11 @@ The following is a rough wireframe of the prdicted logical flow of the program
 
 ![initial logic concept](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/Logic%20Flow.PNG)
 
+Each step will have the following options for the user:
+- A step to progress along the story line
+- A step that will end the game in a humourous way
+- An option to quit the game
+- An option to re-enter choice if invalid input is entered
 
 # Final/Existing Feature Outcomes
 The final command-line application happy path logic will be as follows:
@@ -90,7 +96,7 @@ Full details and evidence of testing conducted throughout the software developme
 
 Once the command-line application had been deployed the Python code was passed through the official PEP8 code validator
 There are no warning errors identified within the code.
-All warning messages are due to the ASCI imagry implemented within the project. A white space is required on rows that end with \ or /, without such, the rows would merge and the image would not display correctly.
+All warning messages are due to the ASCI imagry implemented within the project. A white space is required on rows that end with \ or /, without which, the rows would merge and the image would not display correctly.
 
 ![finalmultiview](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/pep8final.PNG)
 
@@ -99,7 +105,7 @@ All functions have been manually selected to ensure all information has been cor
 
 ### Unfixed bugs
 
-- Colors are not appearing as bold within the mock terminal as they are within a normal system terminal.
+- Colours are not appearing as bold within the mock terminal as they are within a normal system terminal.
         - This will require changing the node.js code that formed part of the initial college template and therefore will not be corrected prior to submission
 
 # Deployment Process
@@ -112,53 +118,55 @@ The steps to deploy are as follows:
 
 1. Ensure that the project has the correct content within the requirements.txt document by running the following commands
 
-![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/1requirementsdoc.PNG)
+![requirements](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/1requirementsdoc.PNG)
 
 2. Once the code is present and upto date, go to the Heroku website (https://www.heroku.com/). If not already signed up for a free account, please do so.
 
 3. One the Heroku Dashboard, select the option for New App, (note you can have up to five applications live with a free heroku account)
 
-![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/2createapp.PNG)
+![createapp](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/2createapp.PNG)
 
-4. This display a page where you will need to give the project a name, and choose your region
+4. This will display a page where you will need to give the project a name, and choose your region
 
-![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/3nameregion.PNG)
+![nameregion](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/3nameregion.PNG)
 
 5. Once Successful the project dashboard will display
 
-![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/4homepage.PNG  )
+![homepage](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/4homepage.PNG  )
 
 Note: As this project does not make any API calls there is no requirement to add an authorisation key
 
 6. Next you will need to tell the Heroku platform what Buildpacks are required, this is done in the Buildpack section on the settings screen
 
-![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/5settingsbp.PNG)
+![settingsbp](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/5settingsbp.PNG)
 
 7. For this project you will need both Python and Nodejs (individually)
 
-![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/6bppython.PNG)
-![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/6bpnodejs.PNG)
+![bppython](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/6bppython.PNG)
+![bpnodejs](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/6bpnodejs.PNG)
 
 8. Now, it is time to deploy your project. To do this select the deployment tab and choose Github
 
-![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/8deploytabno%20auth.PNG)
+![deploytab](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/8deploytabno%20auth.PNG)
 
 9. Search for your repository, and select the correct match
 
-![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/9searchconnect.PNG)
+![connect](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/9searchconnect.PNG)
 
 10. Deploying to Heroku can be done one of two ways. 
 - Automatically, which will mean the project will be with the latest code available each time
 - Manually, which will build the application as per the code available at the time of build. Any changes to the repository will not be added unless the manual build request is utilised again.
 
-![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/10deployoption.PNG)
+![deployment](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/10deployoption.PNG)
 
 11. Success. Select the view option to see your live project
 
-![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/11success.PNG)
+![success](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/11success.PNG)
 
 
 The deployment link for this web apllication is: https://adventure-dragon.herokuapp.com/
+
+![final](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/final.PNG)
 
 ## Copying the Code
 
@@ -169,6 +177,7 @@ To obtain a copy of the code for this project, complete the following steps:
 - Go to the code page of the project
   ![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/copy1.PNG)
 
+
 - Select the "code" buttom in the top right hand corner
   ![copy2](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/copy2.PNG)
 
@@ -176,6 +185,7 @@ To obtain a copy of the code for this project, complete the following steps:
        Downloaded as a ZIP file
        Open with GitHub Desktop (if you have downloaded the app)
        Open with Visual Studio (if you have a copy of the program)
+
 
 # Credits 
 This project could not have been created without the following:
@@ -192,13 +202,12 @@ Not applicable for this project
 ASCI imagry
 - https://www.asciiart.eu/
 
-
 ## Development/Testing Validators
 GitPod IDE
 - https://gitpod.io
 
 Python checker.
-- https://jshint.com/
+- http://pep8online.com/
 
 Python formatter
 - https://codebeautify.org/
