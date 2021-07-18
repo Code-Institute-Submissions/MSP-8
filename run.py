@@ -78,13 +78,13 @@ def start(name):
 
     while answer not in ['1', '2', '3', '0']:
         time.sleep(random.randrange(1, 3))
-        cprint('''        _   _   _   _   _   _   _   _  
+        cprint('''        _   _   _   _   _   _   _   _
         _| |_| |_| |_| |_| |_| |_| |_| |_
         -| |-| |-| |-| |-| |-| |-| |-| |-
-         | | | | | | | | | | | | | | | | 
+         | | | | | | | | | | | | | | | |
         _| |_| |_| |_| |_| |_| |_| |_| |_
         -| |-| |-| |-| |-| |-| |-| |-| |-
-         |_| |_| |_| |_| |_|||_| |_| |_| 
+         |_| |_| |_| |_| |_|||_| |_| |_|
         ,,,,,|_|,,,,,,,,,,,,,,,,,,,|_|,,,''', 'red')
         print(f'Ah here {name}, You just run into the wall,')
         print('How about you try using a door...')
@@ -151,7 +151,7 @@ def desert():
         print('\nI know you are hot and tired, but you need to make a choice')
         answer = input('>\n')
 
-    # Head straight into the dunes result =head further 
+    # Head straight into the dunes result =head further
     if answer == '1':
         time.sleep(random.randrange(1, 3))
         deeper_desert()
@@ -541,8 +541,6 @@ def ocean():
 
 def game_over(reason):
     time.sleep(random.randrange(1, 3))
-    print('\n' + reason)
-    print('Game Over!')
     cprint('''
               ....
              ;::::;
@@ -565,6 +563,8 @@ def game_over(reason):
  `:::::`::::::::::::;'`:;::#                O 
   `:::::`::::::::;' /  / `:#                  
    ::::::`:::::;'  /  /   `#      ''', 'red')
+    print('\n' + reason)
+    print('Game Over!')
 
     # asks the User if they wish to begin the game again
 

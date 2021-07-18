@@ -144,7 +144,24 @@ The python application (run.py file) has been tested on MAC, Windows and linux.
 Due to the size and timelines of this project, there will not be a structured Alpha/Beta stage of UAT. Instead, a selection of volunteers will conduct a time boxed exploratory session. After which feedback will be collated and transformed into bugs, improvements or new features.
 
 The following is the feedback provided from the end users from their exploratory test session:
- - 
+ 1. Colours displayed in a standard terminal are a different shade to those displayed in the mock terminal site. Much brighter in a standard terminal
+                - This means that the use of the mock terminal could create usibility issues
+ 2. Some Imagry is bigger then the mock terminal size and loads faster then a User can read
+ 3. It would be more immersive if the User name was used on more then the first screen
+ 4. Many options and pictures load so far that the user must constantly scroll up/down to read the story 
+ 5. The story line is fun, especially with the different endings depending on how they are reached
+ 6. No errors occurred during the story line and invalid input was handled in a humourous way
+
+ ### Fixed Implemented as a result of UAT
+  2. Same Imagry was replaced, either with smaller images or reduced characters
+  4. Timers were inserted at regular intervals to afford the User the opportunity to read the loading text without scrolling
+
+
+### Unfixed bugs
+
+- Colors are not appearing as bold within the mock terminal as they are within a normal system terminal.
+        - This will require changing the node.js code that formed part of the initial college template and therefore will not be corrected prior to submission
+
 
 ## Performance Testing:
 Performance testing was not conducted on this site as the web application GUI was developed by the college.
@@ -157,7 +174,3 @@ Once the web application had been deployed the python code was passed through th
 ![pep8validator]()
 
 All steps/pages have been visually inspected to ensure all information has been correctly populated and loaded.
-
-### Unfixed bugs
-
-- 
