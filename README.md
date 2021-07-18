@@ -73,13 +73,14 @@ The final command-line application happy path logic will be as follows:
 
 The final game will appear as follows:
 
-![finalmultiview]()
+![finalmultiview](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/multidevice.PNG)
 
 # Future Features to be Implemented
       - Additional steps to extend the game
       - Additional options to the existing screens
       - Additional responses from the Dragon
       - Option to collect a weapon, maybe defect the Dragon
+      - Further use of the Users name throughout the various screens
 
 # Testing 
 
@@ -88,15 +89,18 @@ Full details and evidence of testing conducted throughout the software developme
 ## Production Shakedown Pre Submission
 
 Once the command-line application had been deployed the Python code was passed through the official PEP8 code validator
+There are no warning errors identified within the code.
+All warning messages are due to the ASCI imagry implemented within the project. A white space is required on rows that end with \ or /, without such, the rows would merge and the image would not display correctly.
 
-
+![finalmultiview](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/pep8final.PNG)
 
 All functions have been manually selected to ensure all information has been correctly populated and displayed
 
 
 ### Unfixed bugs
 
--
+- Colors are not appearing as bold within the mock terminal as they are within a normal system terminal.
+        - This will require changing the node.js code that formed part of the initial college template and therefore will not be corrected prior to submission
 
 # Deployment Process
 
@@ -154,10 +158,11 @@ Note: As this project does not make any API calls there is no requirement to add
 ![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/11success.PNG)
 
 
+The deployment link for this web apllication is: https://adventure-dragon.herokuapp.com/
 
-The deployment link for this web apllication is 
+## Copying the Code
 
-## Copying the Repository
+Firstly, please remember that plagiarism is not only unprofessional, but illegal. Please feel free to utilise this code as a reference/learning material and create the original source.
 
 To obtain a copy of the code for this project, complete the following steps:
 
@@ -180,7 +185,7 @@ This project could not have been created without the following:
         https://www.w3resource.com/projects/python/python-projects-5.php
 
 ## API
-
+Not applicable for this project
 
 ## Media
 
