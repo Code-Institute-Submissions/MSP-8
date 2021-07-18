@@ -37,7 +37,7 @@ def begin():
         --'           / |__________________________________| \ ''')
     print("Welcome Truth Seeker")
     time.sleep(random.randrange(0, 2))
-    name = input("By what name are you known?:\n").capitalize()
+    name = input("By what name are you known?\n").capitalize()
     time.sleep(random.randrange(0, 2))
     print(f"Welcome Mighty {name}!")
     start(name)
@@ -95,7 +95,7 @@ def start(name):
 
     # Accept user input, allowing choices, option to quit and invalid function
 
-    answer = input('>')
+    answer = input('>\n')
 
     # Handles invalid user actions
 
@@ -112,7 +112,7 @@ def start(name):
         ,,,,,|_|,,,,,,,,,,,,,,,,,,,|_|,,,,,,,,,,,''', 'red')
         print(f'Ah here {name}, You just run into the wall,')
         print('How about you try using a door...')
-        answer = input('>')
+        answer = input('>\n')
 
     # lead the User into the desert adventure pathway
     if answer == '1':
@@ -167,13 +167,13 @@ def desert():
 
     # Accept user input, allowing choices, option to quit and invalid function
 
-    answer = input('>')
+    answer = input('>\n')
 
     # Handles invalid user input
     while answer not in ['1', '2', '0']:
         time.sleep(random.randrange(0, 2))
         print('\nI know you are hot and tired, but you need to make a choice')
-        answer = input('>')
+        answer = input('>\n')
 
     # Head straight into the dunes result =head further 
     if answer == '1':
@@ -214,14 +214,14 @@ def deeper_desert():
 
     # Accept user input,allowing choices, option to quit and invalid function
 
-    answer = input('>')
+    answer = input('>\n')
 
     # Handles invalid user actions
     while answer not in ['1', '2', '0']:
         time.sleep(random.randrange(0, 2))
         print('''I know you are hot and sweaty,
         but moving forward if the only way to go!''')
-        answer = input('>')
+        answer = input('>\n')
 
     # Turn towards the oasis and hope that it is real result =move forward
     if answer == '1':
@@ -266,13 +266,13 @@ def oasis():
 
     # Accept user input, allowing choices, option to quit and invalid function
 
-    answer = input('>')
+    answer = input('>\n')
 
     # Handles invalid user actions
     while answer not in ['1', '2', '0']:
         time.sleep(random.randrange(0, 2))
         print('What? Did you fall asleep under a tree? Make a choice already')
-        answer = input('>')
+        answer = input('>\n')
     # Have a drink before continuing into the desert result = Game Over
     if answer == '1':
         time.sleep(random.randrange(0, 2))
@@ -321,14 +321,14 @@ def pond():
 
     # Accept user input, allowing choices, option to quit and invalid function
 
-    answer = input('>')
+    answer = input('>\n')
 
     # This will handle user invalid input
     while answer not in ['1', '2', '0']:
         time.sleep(random.randrange(0, 2))
         print("This isn't like the beer advert,")
         print("there is no wildcard 'Option C'")
-        answer = input('>')
+        answer = input('>\n')
 
     # Take a deep breath and dive into the unknown result = move forward
     if answer == '1':
@@ -372,13 +372,13 @@ def forest():
 
 # Accept user input, allowing choices, option to quit and invalid function
 
-    answer = input('>')
+    answer = input('>\n')
 
     # This will handle user invalid input
     while answer not in ['1', '2', '0']:
         time.sleep(random.randrange(0, 2))
         print('There is no going back now, make a choice, forward or up.')
-        answer = input('>')
+        answer = input('>\n')
 
     # Try to forge a path forward... = move forward
     if answer == '1':
@@ -427,13 +427,13 @@ def deeper_forest():
 
     # Accept user input, allowing choices, option to quit and invalid function
 
-    answer = input('>')
+    answer = input('>\n')
 
     # Handles invalid user input
     while answer not in ['1', '2', '0']:
         time.sleep(random.randrange(0, 2))
         print('Seriously dude, make a choice')
-        answer = input('>')
+        answer = input('>\n')
 
     # Swing across like Tarzan result = Game Over
     if answer == '1':
@@ -480,13 +480,13 @@ def gorge():
 
     # Accept user input, allowing choices, option to quit and invalid function
 
-    answer = input('>')
+    answer = input('>\n')
 
     # Handles invalid user input
     while answer not in ['1', '2', '0']:
         time.sleep(random.randrange(0, 2))
         print('Are you trying to fall off the edge, pick a direction.')
-        answer = input('>')
+        answer = input('>\n')
 
     # Carefully, but quickly, cross the rope bridge result = Game Over
     if answer == '1':
@@ -529,13 +529,13 @@ def ocean():
 
     # User input to transition to the next stage
 
-    answer = input('>')
+    answer = input('>\n')
 
     # Handles invalid user input
     while answer not in ['1', '2', '0']:
         time.sleep(random.randrange(0, 2))
         print('You will get tired if you stay where you are!')
-        answer = input('>')
+        answer = input('>\n')
 
     # Swim for it and hope for the best result = Game Over
     if answer == '1':
@@ -719,7 +719,7 @@ def dragon():
         time.sleep(random.randrange(0, 3))
         print(random.choice(dragon_talk))
         print('\nDo you have another question for the Dragon? (y or n)')
-        answer = input('>').lower()
+        answer = input('>\n').lower()
         if 'y' in answer:
             i += 1
             continue

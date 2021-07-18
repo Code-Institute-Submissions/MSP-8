@@ -15,11 +15,12 @@ Each round of testing will contain the following information:
 
 ### Round One - Testing on MVP
 10/07/2021 
+
         Functionality available:
-                Basic logic flow for three pathways to the "dragon"
-                Functions with basic text at each step
-                End game & retry functions
-                Dragon with placeholder responses
+                - Basic logic flow for three pathways to the "dragon"
+                - Functions with basic text at each step
+                - End game & retry functions
+                - Dragon with placeholder responses
 
         Test Results:
                 There are no broken functions stopping the user from proceeding
@@ -54,15 +55,16 @@ Each round of testing will contain the following information:
 
 ### Round Two - Testing on MVP
 17/07/2021 
+
         Functionality available:
-                Basic logic flow for three pathways to the "dragon"
-                Functions with basic text at each step
-                End game & retry functions
-                Dragon with placeholder responses
-                ASCI imagry
-                Obtaining user/player Name
-                Varying Game_over functions for Quit / Successful and Death by Misadventure
-                Different colours for text
+                - Basic logic flow for three pathways to the "dragon"
+                - Functions with basic text at each step
+                - End game & retry functions
+                - Dragon with placeholder responses
+                - ASCI imagry
+                - Obtaining user/player Name
+                - Varying Game_over functions for Quit / Successful and Death by Misadventure
+                - Different colours for text
 
         Test Results:
                 There are no broken functions stopping the user from proceeding
@@ -72,6 +74,7 @@ Each round of testing will contain the following information:
         Planned Functionality to be developed:
                 Using user/player within other functions
         
+
         Evidence:
 
 ![deeperdesertevidence](https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%202/deeper_desert_error.PNG)
@@ -88,16 +91,17 @@ Each round of testing will contain the following information:
 
 ### Round Three - Testing on Final Product prior to deployment
 19/06/2021
+
         Functionality available:
-                Basic logic flow for three pathways to the "dragon"
-                Functions with basic text at each step
-                End game & retry functions
-                Dragon with placeholder responses
-                ASCI imagry
-                Obtaining user/player Name
-                Varying Game_over functions for Quit / Successful and Death by Misadventure
-                Different colours for text
-                Use of user/player name throughout the various functions
+                - Basic logic flow for three pathways to the "dragon"
+                - Functions with basic text at each step
+                - End game & retry functions
+                - Dragon with placeholder responses
+                - ASCI imagry
+                - Obtaining user/player Name
+                - Varying Game_over functions for Quit / Successful and Death by Misadventure
+                - Different colours for text
+                - Use of user/player name throughout the various functions
         Test Results:
                 While there are warning messages displaying on the PEP8 python checker, these additional whitespaces are required to enable the ASCI imagry to display correctly.
                 All lines within the python run/py file are under 80 characters
@@ -143,9 +147,8 @@ The following is the feedback provided from the end users from their exploratory
  - 
 
 ## Performance Testing:
-The following evidence are the results from the performance speed test conducted on the deployed site:
+Performance testing was not conducted on this site as the web application GUI was developed by the college.
 
-![performance]()
 
 ## Production Shakedown Pre Submission
 
