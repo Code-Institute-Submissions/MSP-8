@@ -106,9 +106,52 @@ The site was deployed using Heroku.
 
 The steps to deploy are as follows: 
 
-1. Ensure that the project has the correct content within the requirements.txt document
-![copy1]
+1. Ensure that the project has the correct content within the requirements.txt document by running the following commands
 
+![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/1requirementsdoc.PNG)
+
+2. Once the code is present and upto date, go to the Heroku website (https://www.heroku.com/). If not already signed up for a free account, please do so.
+
+3. One the Heroku Dashboard, select the option for New App, (note you can have up to five applications live with a free heroku account)
+
+![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/2createapp.PNG)
+
+4. This display a page where you will need to give the project a name, and choose your region
+
+![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/3nameregion.PNG)
+
+5. Once Successful the project dashboard will display
+
+![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/4homepage.PNG  )
+
+Note: As this project does not make any API calls there is no requirement to add an authorisation key
+
+6. Next you will need to tell the Heroku platform what Buildpacks are required, this is done in the Buildpack section on the settings screen
+
+![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/5settingsbp.PNG)
+
+7. For this project you will need both Python and Nodejs (individually)
+
+![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/6bppython.PNG)
+![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/6bpnodejs.PNG)
+
+8. Now, it is time to deploy your project. To do this select the deployment tab and choose Github
+
+![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/8deploytabno%20auth.PNG)
+
+9. Search for your repository, and select the correct match
+
+![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/9searchconnect.PNG)
+
+10. Deploying to Heroku can be done one of two ways. 
+- Automatically, which will mean the project will be with the latest code available each time
+- Manually, which will build the application as per the code available at the time of build. Any changes to the repository will not be added unless the manual build request is utilised again.
+
+![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/10deployoption.PNG)
+
+11. Success. Select the view option to see your live project
+
+![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/11success.PNG)
 
 
 
@@ -119,10 +162,10 @@ The deployment link for this web apllication is
 To obtain a copy of the code for this project, complete the following steps:
 
 - Go to the code page of the project
-  ![copy1]
+  ![copy1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/copy1.PNG)
 
 - Select the "code" buttom in the top right hand corner
-  ![copy2]
+  ![copy2](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/copy2.PNG)
 
 - From here the project code can either be
        Downloaded as a ZIP file
