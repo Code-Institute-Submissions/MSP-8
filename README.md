@@ -100,11 +100,15 @@ All functions have been manually selected to ensure all information has been cor
 
 # Deployment Process
 
-## Direct Deployment
-The site was deployed to GitHub pages. 
+## Direct Deployment to Heroku
+
+The site was deployed using Heroku. 
 
 The steps to deploy are as follows: 
-  - 
+
+1. Ensure that the project has the correct content within the requirements.txt document
+![copy1]
+
 
 
 
@@ -137,6 +141,8 @@ This project could not have been created without the following:
 
 ## Media
 
+ASCI imagry
+- https://www.asciiart.eu/
 
 
 ## Development/Testing Validators
@@ -149,8 +155,11 @@ Python checker.
 Python formatter
 - https://codebeautify.org/
 
-ASCI imagry
-- https://www.asciiart.eu/
+Reduce picture size without effecting quality
+- https://tinypng.com
+
+GIFs for test evidence were created using ScreentoGif
+- https://www.screentogif.com/
 
 ## Additional Thanks
 
