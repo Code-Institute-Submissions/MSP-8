@@ -1,8 +1,8 @@
 # Testing 
 
-The following sections are the results of the testing throughout the software development lifecycle for MSP-2. This information has been included in a separate document in order to keep the README document uncluttered.
+The following sections are the results of the testing throughout the software development lifecycle for MSP-3 (python project). This information has been included in a separate document in order to keep the README document uncluttered.
 
-Due to the size and nature of this project, while there will be rounds of testing, instead of distinct testing phases (ie unit, system etc)
+Due to the size and nature of this project, while there will be rounds of functionality testing, instead of distinct testing phases (ie unit, system, integration etc)
 
 ## Functionality Testing:
 Each round of testing will contain the following information:
@@ -17,14 +17,14 @@ Each round of testing will contain the following information:
 10/07/2021 
 
         Functionality available:
-                - Basic logic flow for three pathways to the "dragon"
-                - Functions with basic text at each step
+                - Basic logic flow for each pathway to the "dragon"
+                - Python functions with basic text at each step
                 - End game & retry functions
-                - Dragon with placeholder responses
+                - Basic Dragon with placeholder responses
 
         Test Results:
                 There are no broken functions stopping the user from proceeding
-                Error were discovered surrounding the character length of some rows
+                Errors were discovered in relation to the character length of some rows
                 PEP8 validation was a pass
                 Occational indentation error
 
@@ -58,9 +58,10 @@ Each round of testing will contain the following information:
 
         Functionality available:
                 - Basic logic flow for three pathways to the "dragon"
-                - Functions with basic text at each step
+                - Handling of invalid character entry
+                - Python functions with basic text at each step
                 - End game & retry functions
-                - Dragon with placeholder responses
+                - Basic Dragon with placeholder responses
                 - ASCI imagry
                 - Obtaining user/player Name
                 - Varying Game_over functions for Quit / Successful and Death by Misadventure
@@ -138,6 +139,8 @@ Each round of testing will contain the following information:
 As this application is primarily a command line program, it has been developed with Desktop as the primary access method.
 The python application (run.py file) has been tested on MAC, Windows and linux.
 
+The code will be deployed to Heroku and accessed by the provided mock terminal.
+
 
 ## User Acceptance Testing:
 
@@ -153,7 +156,7 @@ The following is the feedback provided from the end users from their exploratory
  6. No errors occurred during the story line and invalid input was handled in a humourous way
 
  ### Fixed Implemented as a result of UAT
-  2. Same Imagry was replaced, either with smaller images or reduced characters
+  2. Some Imagry was replaced, either with smaller images or reduced characters
   4. Timers were inserted at regular intervals to afford the User the opportunity to read the loading text without scrolling
 
 
