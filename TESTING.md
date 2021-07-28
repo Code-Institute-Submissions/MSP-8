@@ -114,8 +114,8 @@ Each round of testing will contain the following information:
                 Not applicable all planned functionality has been implemented
 
 
-![pythonvalidatorpart1](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/pep8part1.PNG)
-![pythonvalidatorpart2](https://github.com/Sphere42/MSP-3/blob/main/assets/readme/pep8part2.PNG)
+![pythonvalidatorpart1](https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/pep8part1.PNG)
+![pythonvalidatorpart2](https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/pep8part2.PNG)
 
 ![deeperdesert](https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/deeperdesertinvalidquit.gif)
 ![desertinvalidquit](https://github.com/Sphere42/MSP-3/blob/main/assets/testing/Round%203/desertinvalidquit.gif)
