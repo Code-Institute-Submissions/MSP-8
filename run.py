@@ -228,7 +228,7 @@ def oasis():
     cprint('''                ___   ____
                 /' --;^/ ,-_\     \ | /
                / / --o\ o-\ \\   --(_)--
-              /-/-/|o|-|\-\\|\\   / | \
+              /-/-/|o|-|\-\\|\\   / | \ 
                '`  ` |-|   `` '
                      |-|
                      |-|O
@@ -690,7 +690,7 @@ def dragon():
             continue
         else:
             game_complete('Fair thee well, Oh mighty warrior!')
-
+        
     # This will end the game & ask the User if they wish to start again
     else:
         game_over("Don't be so greedy. Begone with you!!!")
